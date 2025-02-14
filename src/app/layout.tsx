@@ -22,8 +22,31 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const baseUrl = process.env.BASE_URL || "";
+
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href={`${baseUrl}/favicons/favicon-96x96.png`}
+          sizes="96x96"
+        />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href={`${baseUrl}/favicons/favicon.svg`}
+        />
+        <link rel="shortcut icon" href={`${baseUrl}/favicons/favicon.ico`} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={`${baseUrl}/favicons/apple-touch-icon.png`}
+        />
+        <meta name="apple-mobile-web-app-title" content="JMB" />
+        <link rel="manifest" href={`${baseUrl}/favicons/site.webmanifest`} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
