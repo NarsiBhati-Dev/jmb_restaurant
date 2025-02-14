@@ -6,8 +6,8 @@ export default function Home() {
       <Image
         src={"/images/jmb-logo.png"}
         alt={"JMB logo"}
-        width={42}
-        height={42}
+        width={62}
+        height={62}
       />{" "}
       <h1 className="font-extrabold">Jai Maa Bhawani Dal Bati Churma</h1>
     </main>
