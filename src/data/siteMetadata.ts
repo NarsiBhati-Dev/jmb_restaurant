@@ -1,3 +1,13 @@
+const envSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+
+if (!envSiteUrl) {
+  throw new Error(
+    '❌ NEXT_PUBLIC_SITE_URL is missing or empty! Check your .env file.',
+  );
+}
+
+const SITE_URL = envSiteUrl.replace(/\/$/, '');
+
 const siteMetadata = {
   title: 'JMB - Dal Bati Churma',
   headerTitle: 'Jai Maa Bhawani Dal Bati Churma',
@@ -5,17 +15,17 @@ const siteMetadata = {
   owner: 'Sunil Bhati',
 
   description:
-    'Welcome to JMB Restaurant, an authentic Rajasthani dining experience! This project is a Rajasthani restaurant website showcasing the rich flavors of Rajasthan, with a special focus on the traditional dish Dal Bati Churma.',
+    'Jai Maa Bhawani Dal Bati Churma offers an authentic Rajasthani dining experience, specializing in Dal Bati Churma and traditional flavors of Rajasthan',
 
-  language: 'en_us',
-  locale: 'en-US',
+  language: 'en-US',
+  locale: 'en-IN',
   theme: 'system',
 
-  siteUrl: 'https://www.jaimaabhawanidalbatichurma.in',
+  siteUrl: SITE_URL,
   siteRepo: 'https://github.com/NarsiBhati-Dev/NextBlog.git',
 
-  siteLogo: '/images/jmb-logo.png',
-  socialBanner: '/images/jmb-social-banner.png',
+  siteLogo: `${SITE_URL}/images/jmb-logo.png`,
+  socialBanner: `${SITE_URL}/images/jmb-social-banner.png`,
 
   email: 'narsibhati2000@gmail.com',
   github: 'https://github.com/NarsiBhati-Dev',
