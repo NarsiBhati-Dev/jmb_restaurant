@@ -20,15 +20,15 @@ export const metadata: Metadata = {
     description: siteMetadata.description,
     url: './',
     siteName: siteMetadata.title,
-    // images: [siteMetadata.socialBanner],
-    // locale: siteMetadata.locale,
+    images: [siteMetadata.socialBanner],
+    locale: siteMetadata.locale,
     type: 'website',
   },
 
   twitter: {
     title: siteMetadata.title,
     card: 'summary_large_image',
-    // images: [siteMetadata.socialBanner],
+    images: [siteMetadata.socialBanner],
   },
 };
 
