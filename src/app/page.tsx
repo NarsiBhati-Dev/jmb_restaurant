@@ -1,15 +1,16 @@
-import Image from "next/image";
+import siteMetadata from '@/data/siteMetadata';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="bg-black text-white text-2xl w-screen h-screen flex justify-center items-center gap-6">
+    <main className='flex h-screen w-screen items-center justify-center gap-6 bg-black text-2xl text-white'>
       <Image
-        src={"/images/jmb-logo.png"}
-        alt={"JMB logo"}
+        src={'/images/jmb-logo.png'}
+        alt={'JMB logo'}
         width={62}
         height={62}
-      />{" "}
-      <h1 className="font-extrabold">Jai Maa Bhawani Dal Bati Churma</h1>
+      />{' '}
+      <h1 className='text-5xl font-extrabold'>{siteMetadata.headerTitle}</h1>
     </main>
   );
 }
