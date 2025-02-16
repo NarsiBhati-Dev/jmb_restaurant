@@ -1,11 +1,12 @@
-const HeaderNavLinks = [
-  { title: 'Home', href: '/' },
-  { title: 'Menu', href: '/menu' },
+import { type Kind } from './icons/navbar-icon';
 
-  { title: 'About', href: '/about-us' },
-  { title: 'Blog', href: '/blog' },
-  { title: 'FAQ', href: '/faq' },
-  { title: '404', href: '/a' },
+const HeaderNavLinks = [
+  { title: 'Home', href: '/', icon: 'home' },
+  { title: 'Menu', href: '/menu', icon: 'menu' },
+  { title: 'About', href: '/about-us', icon: 'about' },
+  { title: 'Blog', href: '/blog', icon: 'blog' },
+  { title: 'FAQ', href: '/faq', icon: 'faq' },
+  { title: '404', href: '/a', icon: 'error' },
 ];
 
 export { HeaderNavLinks };

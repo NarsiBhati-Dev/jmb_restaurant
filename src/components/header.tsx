@@ -25,7 +25,7 @@ const Header = () => {
           className='rounded-full border border-[#ff0000]'
           priority
         />
-        <h1 className='hidden border-l-2 border-[#ff0000] px-2 font-bold tracking-tight sm:block sm:text-xl md:text-2xl'>
+        <h1 className='border-l-2 border-[#ff0000] px-2 text-sm font-bold tracking-tight sm:block sm:text-xl md:text-2xl'>
           {siteMetadata.headerTitle}
         </h1>
       </Link>

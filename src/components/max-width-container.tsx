@@ -10,7 +10,7 @@ const MaxWidthContainer = ({ children, className }: MaxWidthContainerProps) => {
   return (
     <section
       className={clsx(
-        'mx-auto max-w-4xl px-2 sm:px-6 xl:max-w-6xl xl:px-0',
+        'mx-auto max-w-6xl px-2 sm:px-6 xl:max-w-7xl xl:px-0',
         className,
       )}
     >

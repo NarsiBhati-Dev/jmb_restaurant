@@ -1,11 +1,16 @@
+import siteMetadata from '@/data/siteMetadata';
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <main className='h-screen bg-black'>
-      <select
-        className='h-screen w-full bg-cover bg-center'
-        style={{ backgroundImage: 'url(/images/jmb-social-banner.png)' }}
-      ></select>
-      Home page
+      <Image
+        src={'/images/bg-image.png'}
+        alt={''}
+        width={400}
+        height={400}
+        className='h-full w-full'
+      />
     </main>
   );
 }

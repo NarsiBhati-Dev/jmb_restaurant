@@ -11,6 +11,7 @@ import {
 import CustomLink from './custom-link';
 import { HeaderNavLinks } from '@/data/headerNavLinks';
 import clsx from 'clsx';
+import NavIcon, { Kind } from '@/data/icons/navbar-icon';
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ const MobileNav = () => {
   };
 
   useEffect(() => {
-    return clearAllBodyScrollLocks;
+    return clearAllBodyScrollLocks();
   }, []);
 
   return (
@@ -47,25 +48,28 @@ const MobileNav = () => {
       <aside
         className={clsx(
           isOpen ? 'translate-x-0' : 'translate-x-full',
-          'fixed inset-0 z-50 flex flex-col bg-white px-6 py-8 text-black transition-transform duration-500',
+          'fixed inset-0 z-50 flex flex-col bg-white px-2 text-black transition-transform duration-500',
         )}
         ref={navRef}
       >
-        <div className='my-4 flex items-center justify-between border-b-4 border-[#fc0404] pb-4'>
-          <h2 className='text-2xl font-semibold'>Menu</h2>
+        <div className='flex items-center justify-between border-b-4 border-[#fc0404] px-4 py-10 pb-10'>
+          <h2 className='text-3xl font-bold'>Menu</h2>
           <button onClick={() => setIsOpen(false)} aria-label='Close Menu'>
             <SidebarClose />
           </button>
         </div>
 
-        <nav className='mt-6 flex flex-col gap-4 text-lg'>
+        <nav className='mt-6 flex flex-col gap-4 px-6 text-lg'>
           {HeaderNavLinks.map(link => (
             <CustomLink
               key={link.title}
               href={link.href}
-              className={'text-xl font-medium'}
+              className={
+                'flex items-center justify-start gap-4 text-2xl font-medium'
+              }
               onClick={onToggleNav}
             >
+              <NavIcon kind={link.icon as Kind} />
               {link.title}
             </CustomLink>
           ))}
