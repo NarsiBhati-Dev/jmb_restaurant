@@ -1,7 +1,7 @@
 import getPageMetadata from '@/lib/getPageMetadata';
 import React from 'react';
 
-export const metadata = getPageMetadata({ title: 'Menu' });
+export const metadata = getPageMetadata({ title: 'Menu', path: 'menu' });
 
 const MenuPage = () => {
   return <div>MenuPage</div>;

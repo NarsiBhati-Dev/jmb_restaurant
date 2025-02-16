@@ -5,25 +5,33 @@ interface GetPageMetadataProps {
   title: string;
   description?: string;
   image?: string;
+  path?: string;
 }
 
 const getPageMetadata = ({
   title,
   description,
   image,
+  path = '',
 }: GetPageMetadataProps): Metadata => {
   const metaTitle = `${title} | ${siteMetadata.title}`;
   const metaDescription = description ?? siteMetadata.description;
   const metaImage = image ? image : siteMetadata.socialBanner;
+  const sitePath = path
+    ? `${siteMetadata.siteUrl}/${path}`
+    : siteMetadata.siteUrl;
 
   return {
     metadataBase: new URL(siteMetadata.siteUrl),
     title,
     description: metaDescription,
+    alternates: {
+      canonical: sitePath,
+    },
     openGraph: {
       title: metaTitle,
       description: metaDescription,
-      url: siteMetadata.siteUrl,
+      url: sitePath,
       siteName: siteMetadata.title,
       images: [
         {

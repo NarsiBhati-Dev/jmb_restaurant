@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { Space_Grotesk } from 'next/font/google';
 import '@/style/globals.css';
 import siteMetadata from '@/data/siteMetadata';
+import MaxWidthContainer from '@/components/max-width-container';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -55,7 +58,7 @@ export default function RootLayout({
   const baseUrl = siteMetadata.siteUrl;
 
   return (
-    <html lang={siteMetadata.language}>
+    <html lang={siteMetadata.language} suppressHydrationWarning>
       <head>
         <link
           rel='icon'
@@ -84,8 +87,14 @@ export default function RootLayout({
           content='width=device-width, initial-scale=1, viewport-fit=cover'
         />
       </head>
-      <body className={`${spaceGrotesk.className} antialiased`}>
-        {children}
+      <body
+        className={`${spaceGrotesk.className} scroll-smooth pl-[calc(100vw-100%)] antialiased`}
+      >
+        <MaxWidthContainer>
+          <Header />
+          {children}
+          <Footer />
+        </MaxWidthContainer>
       </body>
     </html>
   );
