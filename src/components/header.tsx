@@ -9,7 +9,7 @@ import MobileNav from './mobile-nav';
 const Header = () => {
   return (
     <header
-      className='mb-4 flex items-center justify-between border-b-4 border-[#ff0000] py-8'
+      className='border-jmb-red mb-4 flex items-center justify-between border-b-4 px-2 py-8'
       aria-label='Header'
     >
       <Link
@@ -22,10 +22,10 @@ const Header = () => {
           alt={`${siteMetadata.title} - logo`}
           width={50}
           height={50}
-          className='rounded-full border border-[#ff0000]'
+          className='border-jmb-red rounded-full border'
           priority
         />
-        <h1 className='border-l-2 border-[#ff0000] px-2 text-sm font-bold tracking-tight sm:block sm:text-xl md:text-2xl'>
+        <h1 className='border-jmb-red border-l-2 px-2 text-sm font-bold tracking-tight sm:block sm:text-xl md:text-2xl'>
           {siteMetadata.headerTitle}
         </h1>
       </Link>

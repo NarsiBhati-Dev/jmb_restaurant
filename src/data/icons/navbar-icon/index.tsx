@@ -22,7 +22,7 @@ const NavIcon = ({ kind, size = 8 }: NavIconProps) => {
     return null;
   }
 
-  return <NavSvg className={`px-0 hover:text-[#ff0000]`} />;
+  return <NavSvg className={`hover:text-jmb-red px-0`} />;
 };
 
 export default NavIcon;

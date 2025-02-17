@@ -19,7 +19,7 @@ const CustomLink: FC<CustomLinkProps> = ({
     <Link
       href={href}
       className={clsx(
-        'rounded-md outline-[#ff0000] transition-all hover:text-[#ff0000] focus-visible:rounded-sm focus-visible:outline-1',
+        'outline-jmb-red hover:text-jmb-red rounded-md transition-all focus-visible:rounded-sm focus-visible:outline-1',
         className,
       )}
       onClick={onClick}

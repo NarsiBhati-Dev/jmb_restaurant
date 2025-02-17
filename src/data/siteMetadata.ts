@@ -11,6 +11,7 @@ const SITE_URL = envSiteUrl.replace(/\/$/, '');
 const siteMetadata = {
   title: 'JMB - Dal Bati Churma',
   headerTitle: 'Jai Maa Bhawani Dal Bati Churma',
+  headerTitleHindi: 'जय माँ भवानी दाल बाटी चूरमा',
 
   owner: 'Sunil Bhati',
 

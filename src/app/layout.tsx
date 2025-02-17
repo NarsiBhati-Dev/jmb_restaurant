@@ -88,14 +88,15 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${spaceGrotesk.className} scroll-smooth pl-[calc(100vw-100%)] antialiased`}
+        className={`${spaceGrotesk.className} scroll-smooth bg-amber-50 px-[calc(100vw-100%)] antialiased`}
       >
-        <MaxWidthContainer>
-          <Header />
-          {children}
-          <Footer />
-        </MaxWidthContainer>
+        <Header />
+        {/* <MaxWidthContainer> */}
+        {children}
+        {/* </MaxWidthContainer> */}
+        <Footer />
       </body>
     </html>
   );
 }
+// pl-[calc(100vw-100%)]
