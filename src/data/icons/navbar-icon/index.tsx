@@ -12,10 +12,9 @@ export type Kind = keyof typeof components;
 
 interface NavIconProps {
   kind: Kind;
-  size?: number;
 }
 
-const NavIcon = ({ kind, size = 8 }: NavIconProps) => {
+const NavIcon = ({ kind }: NavIconProps) => {
   const NavSvg = components[kind];
 
   if (!NavSvg) {

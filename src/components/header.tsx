@@ -9,7 +9,7 @@ import MobileNav from './mobile-nav';
 const Header = () => {
   return (
     <header
-      className='border-jmb-red mb-4 flex items-center justify-between border-b-4 px-2 py-8'
+      className='border-jmb-red mb-4 flex items-center justify-between border-b-4 px-4 py-8'
       aria-label='Header'
     >
       <Link

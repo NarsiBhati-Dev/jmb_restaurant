@@ -1,5 +1,3 @@
-import clsx from 'clsx';
-
 interface IconsProps {
   className: string;
 }
@@ -32,7 +30,6 @@ export const Menu = ({ className }: IconsProps) => {
       viewBox='0 0 24 24'
       aria-label='menu icon'
       className={className}
-      //   style={{ width: 25, height: 25 }}
       xmlns='http://www.w3.org/2000/svg'
     >
       <path d='M3 2h2v20H3zm16 0H6v20h13c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-1 10H9v-2h9v2zm0-4H9V6h9v2z'></path>
@@ -40,7 +37,7 @@ export const Menu = ({ className }: IconsProps) => {
   );
 };
 
-export const About = ({ className }: IconsProps) => {
+export const About = () => {
   return (
     <svg
       stroke='currentColor'
@@ -56,7 +53,7 @@ export const About = ({ className }: IconsProps) => {
   );
 };
 
-export const Blog = ({ className }: IconsProps) => {
+export const Blog = () => {
   return (
     <svg
       stroke='currentColor'

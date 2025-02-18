@@ -24,7 +24,7 @@ const Button = ({
         'transform cursor-pointer rounded-md font-extrabold transition-all duration-300 ease-in-out active:scale-95',
         {
           // 🌟 Primary button styles with smooth hover transition
-          'bg-jmb-red md:hover:border-jmb-red text-white shadow-md md:hover:border-2 md:hover:bg-red-400 md:hover:text-black md:hover:shadow-lg':
+          'bg-jmb-red md:hover:border-jmb-red text-white shadow-md md:hover:border-2 md:hover:shadow-lg':
             variant === 'primary',
 
           // 🌟 Secondary button styles with color & shadow transition
@@ -34,7 +34,7 @@ const Button = ({
         {
           // ✅ Responsive sizes: different for mobile & larger screens
           'px-3 py-1 text-sm md:px-4 md:py-2 md:text-base': size === 'sm',
-          'px-4 py-2 text-base md:px-6 md:py-3 md:text-lg': size === 'md',
+          'px-4 py-2 text-base md:px-6 md:py-3 md:text-xl': size === 'md',
           'px-5 py-3 text-lg md:px-8 md:py-4 md:text-xl': size === 'lg',
         },
         className, // Allow additional custom styles
