@@ -13,7 +13,7 @@ export default function Home() {
           width={500}
           height={500}
           priority
-          className='min-h-72 w-full rounded-xl object-cover sm:h-full'
+          className='min-h-[28rem] w-full rounded-xl object-cover sm:h-full'
         />
 
         {/* Hero Section */}
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       <section className='py-10 text-center'>
-        <p className='text-lg'>Welcome to JMB Restaurant! 🍽️</p>
+        <p className='text-xl'>Welcome to JMB Restaurant! 🍽️</p>
       </section>
     </main>
   );

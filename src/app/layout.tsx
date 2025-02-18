@@ -90,11 +90,11 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.className} scroll-smooth bg-amber-50 px-[calc(100vw-100%)] antialiased`}
       >
-        <Header />
         {/* <MaxWidthContainer> */}
+        <Header />
         {children}
-        {/* </MaxWidthContainer> */}
         <Footer />
+        {/* </MaxWidthContainer> */}
       </body>
     </html>
   );
