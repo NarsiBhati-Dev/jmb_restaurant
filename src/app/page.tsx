@@ -1,6 +1,11 @@
 import siteMetadata from '@/data/siteMetadata';
 import Image from 'next/image';
 import Button from '@/components/button';
+import getPageMetadata from '@/lib/getPageMetadata';
+
+export const metadata = getPageMetadata({
+  title: 'Home',
+});
 
 export default function Home() {
   return (
@@ -36,7 +41,9 @@ export default function Home() {
       </section>
 
       <section className='py-10 text-center'>
-        <p className='text-xl'>Welcome to JMB Restaurant! 🍽️</p>
+        <p className='text-xl font-bold md:text-2xl'>
+          Welcome to JMB Restaurant! 🍽️
+        </p>
       </section>
     </main>
   );

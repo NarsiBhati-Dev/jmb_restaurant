@@ -81,7 +81,6 @@ export default function RootLayout({
 
         <link rel='manifest' href={`${baseUrl}/favicons/site.webmanifest`} />
 
-        <link rel='canonical' href={siteMetadata.siteUrl} />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1, viewport-fit=cover'
@@ -90,11 +89,9 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.className} scroll-smooth bg-amber-50 antialiased`}
       >
-        {/* <MaxWidthContainer> */}
         <Header />
         {children}
         <Footer />
-        {/* </MaxWidthContainer> */}
       </body>
     </html>
   );

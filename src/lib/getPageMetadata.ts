@@ -18,7 +18,7 @@ const getPageMetadata = ({
   const metaDescription = description ?? siteMetadata.description;
   const metaImage = image ? image : siteMetadata.socialBanner;
   const sitePath = path
-    ? `${siteMetadata.siteUrl}/${path}`
+    ? `${siteMetadata.siteUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`
     : siteMetadata.siteUrl;
 
   return {
