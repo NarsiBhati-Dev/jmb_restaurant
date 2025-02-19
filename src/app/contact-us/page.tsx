@@ -1,6 +1,6 @@
 import Contact, { type Kind } from '@/components/contact';
 import GoogleMap from '@/components/google-map';
-import { contactData } from '@/data/ContactList';
+import { contactData } from '@/data/contactList';
 import React from 'react';
 
 const ContactPage = () => {

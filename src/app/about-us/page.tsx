@@ -87,15 +87,14 @@ const AboutPage = () => {
       </section>
 
       {/* Visit Us */}
-      <section className='mt-12'>
+      <section className='mt-12 w-full'>
         <h2 className='text-2xl font-bold md:text-4xl'>Visit Us</h2>
         <p className='mt-4 text-justify text-gray-700 md:text-xl'>
           Come experience the flavors of Rajasthan at JMB Restaurant. We are
           open every day to serve you!
         </p>
-        <div className='mt-6'>
-          <GoogleMap />
-        </div>
+
+        <GoogleMap />
       </section>
     </main>
   );
