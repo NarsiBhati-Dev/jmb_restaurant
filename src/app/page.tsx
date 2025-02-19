@@ -1,11 +1,6 @@
 import siteMetadata from '@/data/siteMetadata';
 import Image from 'next/image';
 import Button from '@/components/button';
-import getPageMetadata from '@/lib/getPageMetadata';
-
-export const metadata = getPageMetadata({
-  title: 'Home',
-});
 
 export default function Home() {
   return (
@@ -27,14 +22,16 @@ export default function Home() {
           <h1 className='text-jmb-red text-2xl font-extrabold md:text-5xl xl:text-7xl'>
             {siteMetadata.headerTitleHindi}
           </h1>
-
+          <h2 className='mb-6 rounded px-4 py-2 text-xl font-bold text-black sm:text-2xl md:text-3xl'>
+            Taste of Rajasthan
+          </h2>
           {/* Buttons */}
           <section className='mt-4 flex flex-wrap justify-center gap-4'>
             <Button size='md' variant='primary' href='#OrderNow'>
               Order Now
             </Button>
-            <Button size='md' variant='secondary' href='#Location'>
-              Location
+            <Button size='md' variant='secondary' href='/contact-us'>
+              Visit Us
             </Button>
           </section>
         </section>

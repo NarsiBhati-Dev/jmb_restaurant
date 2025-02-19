@@ -13,7 +13,7 @@ export default function NotFoundPage() {
           width={400}
           height={500}
           priority
-          className='h-full min-h-[32rem] w-full rounded-lg object-cover'
+          className='h-full min-h-[30rem] w-full rounded-lg object-cover'
         />
 
         <section className='absolute right-0 bottom-0 left-0 flex flex-col items-center justify-center py-4 text-white md:pb-36 2xl:pb-40'>
@@ -22,9 +22,10 @@ export default function NotFoundPage() {
           <h2 className='mb-8 text-2xl font-extrabold md:text-5xl'>
             PageNotFound
           </h2>
-          <p className='mb-2 text-5xl font-semibold text-yellow-200 md:text-[100px]'>
+          <div className='text-jmb-red mb-4 border-b-2 text-5xl font-semibold md:text-[100px]'>
             पधारो सा!
-          </p>
+            <div className='border-2 border-yellow-300'></div>
+          </div>
 
           {/* Back to Homepage Button */}
           <Link

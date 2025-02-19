@@ -6,10 +6,10 @@ export const metadata = getPageMetadata({ title: 'FAQ', path: 'faq' });
 const FaqPage = () => {
   return (
     <div className='min-h-screen bg-yellow-50 px-6 py-16 text-gray-800 md:px-16'>
-      <h1 className='text-jmb-red text-center text-4xl font-bold'>
+      <h1 className='text-jmb-red py-4 text-center text-5xl font-bold md:text-6xl'>
         Frequently Asked Questions
       </h1>
-      <p className='mx-auto mt-4 max-w-2xl text-center tracking-tight text-gray-700 md:text-xl'>
+      <p className='mx-auto mt-4 max-w-2xl text-center tracking-tight text-gray-700 md:text-2xl'>
         Find answers to common questions about our food, services, and more!
       </p>
 

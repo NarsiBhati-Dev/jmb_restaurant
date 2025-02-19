@@ -24,11 +24,11 @@ const Button = ({
         'transform cursor-pointer rounded-md font-extrabold transition-all duration-300 ease-in-out active:scale-95',
         {
           // 🌟 Primary button styles with smooth hover transition
-          'bg-jmb-red md:hover:border-jmb-red text-white shadow-md md:hover:border-2 md:hover:shadow-lg':
+          'bg-jmb-red border-2 text-white shadow-md md:hover:border-2 md:hover:shadow-xl':
             variant === 'primary',
 
           // 🌟 Secondary button styles with color & shadow transition
-          'border-jmb-red border-2 text-black shadow-md md:shadow-gray-300/50 md:hover:border-amber-400 md:hover:bg-amber-300 md:hover:shadow-lg':
+          'border-jmb-red border-2 text-black shadow-md md:shadow-gray-300/50 md:hover:border-amber-400 md:hover:bg-amber-300':
             variant === 'secondary',
         },
         {

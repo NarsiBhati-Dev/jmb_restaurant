@@ -1,4 +1,4 @@
-import { Menu, Home, About, Blog, Faq } from './navbar-icons';
+import { Menu, Home, About, Blog, Faq, Contact } from './navbar-icons';
 
 const components = {
   menu: Menu,
@@ -6,6 +6,7 @@ const components = {
   about: About,
   blog: Blog,
   faq: Faq,
+  contact: Contact,
 };
 
 export type Kind = keyof typeof components;
