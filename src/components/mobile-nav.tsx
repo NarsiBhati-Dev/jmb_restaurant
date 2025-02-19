@@ -39,7 +39,7 @@ const MobileNav = () => {
     <>
       <button
         onClick={() => setIsOpen(prev => !prev)}
-        className='relative z-50 flex items-center justify-center md:hidden'
+        className='relative z-50 flex items-center justify-center lg:hidden'
         aria-label='Toggle Menu'
       >
         {!isOpen && <SidebarOpen />}

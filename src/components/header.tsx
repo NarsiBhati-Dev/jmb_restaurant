@@ -25,12 +25,12 @@ const Header = () => {
           className='border-jmb-red rounded-full border'
           priority
         />
-        <h1 className='border-jmb-red border-l-2 px-2 text-sm font-bold tracking-tight sm:block sm:text-xl md:text-2xl'>
+        <h1 className='border-jmb-red border-l-2 px-2 text-sm font-bold tracking-tight md:text-2xl'>
           {siteMetadata.headerTitle}
         </h1>
       </Link>
       <div className='flex items-center justify-between'>
-        <nav className='hidden items-center justify-between gap-4 md:flex md:text-lg md:font-medium'>
+        <nav className='hidden items-center justify-between gap-4 md:font-medium lg:flex'>
           {HeaderNavLinks.filter(link => link.title !== 'Home').map(link => (
             <CustomLink
               href={link.href}

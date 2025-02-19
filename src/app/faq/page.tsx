@@ -5,7 +5,7 @@ export const metadata = getPageMetadata({ title: 'FAQ', path: 'faq' });
 
 const FaqPage = () => {
   return (
-    <div className='min-h-screen bg-yellow-50 px-6 py-16 text-gray-800 md:px-16'>
+    <div className='min-h-screen bg-yellow-50 px-6 text-gray-800 md:px-16 md:py-10'>
       <h1 className='text-jmb-red py-4 text-center text-5xl font-bold md:text-6xl'>
         Frequently Asked Questions
       </h1>

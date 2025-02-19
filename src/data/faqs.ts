@@ -2,11 +2,12 @@ const faqs = [
   {
     question: 'What is JMB Restaurant known for?',
     answer:
-      'We specialize in authentic Dal Bati Churma traditional Rajasthani dish.',
+      'We specialize in authentic Dal Bati Churma, a traditional Rajasthani dish.',
   },
   {
     question: 'Where are you located?',
-    answer: `We are located at - Hp Petrol Pump, Opp Spicy Kitchen ,Panji Ka Bera, Pal Rd, near Gayatri Nagar.`,
+    answer:
+      'We are located at - Hp Petrol Pump, Opp Spicy Kitchen, Panji Ka Bera, Pal Road, near Gayatri Nagar, Jodhpur, Rajasthan.',
   },
   {
     question: 'What are your opening hours?',

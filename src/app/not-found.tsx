@@ -8,7 +8,7 @@ export default function NotFoundPage() {
       <section className='relative sm:h-64 md:h-screen'>
         {/* Background Image */}
         <Image
-          src='/images/bg-home.webp'
+          src='/images/bg-image.webp'
           alt='Rajasthani Theme'
           width={400}
           height={500}

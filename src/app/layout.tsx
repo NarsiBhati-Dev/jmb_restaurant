@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Space_Grotesk } from 'next/font/google';
 import '@/style/globals.css';
 import siteMetadata from '@/data/siteMetadata';
-// import MaxWidthContainer from '@/components/max-width-container';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 

@@ -8,7 +8,7 @@ export default function Home() {
       <section className='relative sm:h-64 md:h-screen'>
         {/* Background Image */}
         <Image
-          src='/images/bg-home1.webp'
+          src='/images/bg-image.webp'
           alt='Background'
           width={500}
           height={500}

@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Email,
-  Phone,
-  Whatsapp,
-  Location,
-} from '@/data/icons/contact-icon/contact-icons';
+import { Email, Phone, Whatsapp, Location } from '@/data/icons/contact-icons';
 import Link from 'next/link';
 
 const components = {
