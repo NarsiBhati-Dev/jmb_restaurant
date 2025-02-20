@@ -18,7 +18,7 @@ interface ContactProps {
   link: string;
 }
 
-const Contact = ({ kind, label, value, link }: ContactProps) => {
+const ContactCard = ({ kind, label, value, link }: ContactProps) => {
   const ContactSvg = components[kind];
 
   return (
@@ -35,4 +35,4 @@ const Contact = ({ kind, label, value, link }: ContactProps) => {
   );
 };
 
-export default Contact;
+export default ContactCard;

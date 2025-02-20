@@ -22,12 +22,6 @@ export const menuItems = {
         'Classic Rajasthani dish with baked wheat balls and lentil curry.',
     },
     {
-      name: 'Dal',
-      image: '/images/menu/dal.webp',
-      price: '₹30',
-      description: 'Slow-cooked lentil soup infused with rich Indian spices.',
-    },
-    {
       name: 'Churma',
       image: '/images/menu/churma.webp',
       price: '₹120',
@@ -39,14 +33,14 @@ export const menuItems = {
       price: '₹50',
       description: 'Traditional Rajasthani gram flour sweet balls.',
     },
+    {
+      name: 'Dal',
+      image: '/images/menu/dal.webp',
+      price: '₹30',
+      description: 'Slow-cooked lentil soup infused with rich Indian spices.',
+    },
   ],
   sides: [
-    {
-      name: 'Lasun Chatni',
-      image: '/images/menu/lasun-chatni.webp',
-      price: '₹40 (100g)',
-      description: 'Spicy garlic chutney, a perfect accompaniment to Dal Bati.',
-    },
     {
       name: 'Masala Papad',
       image: '/images/menu/masala-papad.webp',
@@ -55,16 +49,22 @@ export const menuItems = {
         'Crispy spiced papad topped with onions, tomatoes, and masala.',
     },
     {
-      name: 'Mirchi ka Kutta',
-      image: '/images/menu/mirchi-ka-kutta.webp',
-      price: '₹40 (100g)',
-      description: 'Traditional crushed green chili with spices.',
-    },
-    {
       name: 'Plain Papad',
       image: '/images/menu/plain-papad.webp',
       price: '₹20',
       description: 'Classic thin crispy wafer, a staple side dish.',
+    },
+    {
+      name: 'Lasun Chatni',
+      image: '/images/menu/lasun-chatni.webp',
+      price: '₹40 (100g)',
+      description: 'Spicy garlic chutney, a perfect accompaniment to Dal Bati.',
+    },
+    {
+      name: 'Mirchi ka Kutta',
+      image: '/images/menu/mirchi-ka-kutta.webp',
+      price: '₹40 (100g)',
+      description: 'Traditional crushed green chili with spices.',
     },
   ],
 };

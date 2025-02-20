@@ -3,7 +3,7 @@
 import faqs from '@/data/faqs';
 import React, { useState } from 'react';
 
-const FaqCom = () => {
+const FaqCard = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -32,4 +32,4 @@ const FaqCom = () => {
   );
 };
 
-export default FaqCom;
+export default FaqCard;

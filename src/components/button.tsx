@@ -4,8 +4,8 @@ import React from 'react';
 
 interface ButtonProps {
   className?: string;
-  variant?: 'primary' | 'secondary';
-  size?: 'sm' | 'md' | 'lg';
+  variant: 'primary' | 'secondary';
+  size: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
   href?: string;
 }
