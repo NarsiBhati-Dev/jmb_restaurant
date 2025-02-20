@@ -79,7 +79,7 @@ const AboutPage = () => {
                 alt={item.alt}
                 width={200}
                 height={200}
-                className='absolute inset-0 h-full w-full'
+                className='aspect-square'
               />
             </div>
           ))}

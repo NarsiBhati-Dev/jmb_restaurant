@@ -1,4 +1,5 @@
-import Contact, { type Kind } from '@/components/contact';
+import ContactCard from '@/components/contact-card';
+import { type Kind } from '@/components/contact-card';
 import GoogleMap from '@/components/google-map';
 import { contactData } from '@/data/contactList';
 import React from 'react';
@@ -13,11 +14,13 @@ const ContactPage = () => {
         </span>
       </h1>
       <section
-        className={'grid w-full grid-cols-1 gap-4 md:grid-cols-2'}
+        className={
+          'grid w-full grid-cols-1 gap-4 rounded-lg bg-white p-4 md:grid-cols-2'
+        }
         aria-label='Contact Details'
       >
         {contactData.map((contact, index) => (
-          <Contact
+          <ContactCard
             kind={contact.icon as Kind}
             key={index}
             label={contact.label}

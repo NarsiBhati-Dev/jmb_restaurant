@@ -1,5 +1,4 @@
 import getPageMetadata from '@/lib/getPageMetadata';
-import Image from 'next/image';
 import React from 'react';
 import { menuItems } from '@/data/menuList';
 import MenuItemCard from '@/components/menu-item-card';

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import NavIcon from '@/data/icons/navbar-icon';
+import Button from '@/components/button';
 
 export default function NotFoundPage() {
   return (
@@ -28,12 +29,10 @@ export default function NotFoundPage() {
           </div>
 
           {/* Back to Homepage Button */}
-          <Link
-            href='/'
-            className='bg-jmb-red flex items-center justify-center gap-2 rounded-md px-6 py-3 text-lg font-semibold text-white transition-all duration-300 hover:bg-red-600'
-          >
-            Back to homepage <NavIcon kind={'home'} />
-          </Link>
+
+          <Button variant={'primary'} size={'lg'}>
+            Back to homepage
+          </Button>
         </section>
       </section>
     </main>

@@ -1,5 +1,6 @@
 import getPageMetadata from '@/lib/getPageMetadata';
-import FaqCom from '../../components/faq-com';
+import FaqCard from '../../components/faq-card';
+import Button from '@/components/button';
 
 export const metadata = getPageMetadata({ title: 'FAQ', path: 'faq' });
 
@@ -13,13 +14,13 @@ const FaqPage = () => {
         Find answers to common questions about our food, services, and more!
       </p>
 
-      <FaqCom />
+      <FaqCard />
 
       <div className='mt-12 text-center'>
-        <p className='text-lg font-medium'>Still have questions?</p>
-        <button className='bg-jmb-red mt-4 rounded-lg px-6 py-3 text-lg font-bold text-white'>
+        <p className='pb-4 text-lg font-medium'>Still have questions?</p>
+        <Button size='lg' href='/contact-us' variant='primary'>
           Contact Us
-        </button>
+        </Button>
       </div>
     </div>
   );
