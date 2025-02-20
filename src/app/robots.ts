@@ -11,7 +11,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/', // Allow crawling entire site
       },
     ],
-    // sitemap: `${siteMetadata.siteUrl}/sitemap.xml`, // Link to your sitemap
+    sitemap: `${siteMetadata.siteUrl}/sitemap.xml`, // Link to your sitemap
     host: siteMetadata.siteUrl,
   };
 }
