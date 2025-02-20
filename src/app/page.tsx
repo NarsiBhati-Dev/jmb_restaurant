@@ -66,7 +66,7 @@ export default function Home() {
         <div className='mt-6 flex flex-wrap justify-center gap-6'>
           {[
             { src: '/images/menu/dal-bati.webp', name: 'Dal Bati Churma' },
-            { src: '/images/menu/churma.webp', name: 'Lasun Chatni' },
+            { src: '/images/menu/churma.webp', name: 'Churma Plate' },
             { src: '/images/menu/masala-papad.webp', name: 'Masala Papad' },
           ].map((item, index) => (
             <div key={index} className='my-4 h-36 w-40'>

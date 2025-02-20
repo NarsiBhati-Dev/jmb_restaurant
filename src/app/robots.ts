@@ -7,11 +7,11 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: '*', // Allow all search engines
-        allow: '/', // Allow crawling entire site
+        userAgent: '*',
+        allow: '/',
       },
     ],
-    sitemap: `${siteMetadata.siteUrl}/sitemap.xml`, // Link to your sitemap
+    sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
     host: siteMetadata.siteUrl,
   };
 }

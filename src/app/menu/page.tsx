@@ -2,6 +2,7 @@ import getPageMetadata from '@/lib/getPageMetadata';
 import Image from 'next/image';
 import React from 'react';
 import { menuItems } from '@/data/menuList';
+import MenuItemCard from '@/components/menu-item-card';
 
 export const metadata = getPageMetadata({ title: 'Menu', path: 'menu' });
 
@@ -20,22 +21,15 @@ const MenuPage = () => {
           <h2 className='text-jmb-red mb-4 text-2xl font-bold capitalize md:text-3xl'>
             {category.replace(/([A-Z])/g, ' $1').trim()}
           </h2>
-          <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
+          <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3'>
             {items.map((item, index) => (
-              <div key={index} className='flex flex-col items-center'>
-                <div className='relative h-36 w-36 rounded-lg shadow-md md:h-44 md:w-44'>
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    width={200}
-                    height={200}
-                    className='h-full w-full rounded-lg'
-                  />
-                </div>
-                <p className='mt-2 text-center text-[16px] font-semibold md:text-lg'>
-                  {item.name}
-                </p>
-              </div>
+              <MenuItemCard
+                name={item.name}
+                image={item.image}
+                price={item.price}
+                description={item.description}
+                key={index}
+              />
             ))}
           </div>
         </section>

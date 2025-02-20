@@ -1,7 +1,7 @@
 import getPageMetadata from '@/lib/getPageMetadata';
 import Image from 'next/image';
-// import GoogleMap from '@/components/google-map';
 import React from 'react';
+import GoogleMap from '@/components/google-map';
 import siteMetadata from '@/data/siteMetadata';
 import { aboutImages } from '@/data/aboutImages';
 
@@ -94,7 +94,7 @@ const AboutPage = () => {
           open every day to serve you!
         </p>
 
-        {/* <GoogleMap /> */}
+        <GoogleMap />
       </section>
     </main>
   );
