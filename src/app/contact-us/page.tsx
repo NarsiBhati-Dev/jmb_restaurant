@@ -1,7 +1,7 @@
 import ContactCard from '@/components/contact-card';
 import { type Kind } from '@/components/contact-card';
 import GoogleMap from '@/components/google-map';
-import contactList from '@/data/contactList';
+import contactList from '@/data/contact-list';
 import getPageMetadata from '@/lib/getPageMetadata';
 import React from 'react';
 
