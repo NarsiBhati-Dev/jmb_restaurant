@@ -20,4 +20,4 @@ This website is designed to represent the rich culture and flavors of Rajasthan 
 • Frontend: Next.js, React, Tailwind CSS
 • Deployment: Vercel
 
-Contributions and feedback are welcome! 🎉
+feedback are welcome! 🎉

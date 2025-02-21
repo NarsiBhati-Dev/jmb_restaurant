@@ -28,10 +28,14 @@ export default function Home() {
             Taste of Rajasthan
           </h2>
           <section className='mt-4 flex flex-wrap justify-center gap-4'>
-            <Button size='md' variant='primary' href='#OrderNow'>
+            <Button
+              size='lg'
+              variant='primary'
+              href='https://zoma.to/order/20219963'
+            >
               Order Now
             </Button>
-            <Button size='md' variant='secondary' href='/contact-us'>
+            <Button size='lg' variant='secondary' href='/contact-us'>
               Visit Us
             </Button>
           </section>
@@ -69,13 +73,13 @@ export default function Home() {
             { src: '/images/menu/churma.webp', name: 'Churma Plate' },
             { src: '/images/menu/masala-papad.webp', name: 'Masala Papad' },
           ].map((item, index) => (
-            <div key={index} className='my-4 h-36 w-40'>
+            <div key={index} className='my-4'>
               <Image
                 src={item.src}
                 alt={item.name}
-                width={160}
-                height={160}
-                className='h-full w-40 rounded-lg shadow-md'
+                width={200}
+                height={200}
+                className='aspect-video h-full w-40 rounded-lg shadow-md'
               />
               <p className='mt-2 font-semibold'>{item.name}</p>
             </div>
@@ -108,6 +112,43 @@ export default function Home() {
           </Button>
         </section>
       </section>
+
+      {/* JSON-LD for structured data */}
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Restaurant',
+            name: 'Jai Maa Bhawani Dal Bati Churma',
+            image:
+              'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
+            description:
+              'Jai Maa Bhawani Dal Bati Churma offers an authentic Rajasthani dining experience, specializing in Dal Bati Churma and traditional flavors of Rajasthan',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress:
+                'Hp Petrol Pump, Opp Spicy Kitchen, Panji Ka Bera, Pal Road, near Gayatri Nagar',
+              addressLocality: 'Jodhpur',
+              addressRegion: 'Rajasthan',
+              postalCode: '342001',
+              addressCountry: 'IN',
+            },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: '26.2389',
+              longitude: '73.0243',
+            },
+            telephone: '+91-75680-87763',
+            priceRange: '₹',
+            servesCuisine: 'Rajasthani',
+            openingHours: ['Mo-Su 10:00-23:30'],
+            acceptsReservations: 'False',
+            menu: 'https://www.jaimaabhawanidalbatichurma.in/menu',
+            sameAs: ['https://zoma.to/order/20219963'],
+          }),
+        }}
+      />
     </main>
   );
 }

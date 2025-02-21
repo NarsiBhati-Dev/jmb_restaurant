@@ -1,8 +1,8 @@
 export const contactData = [
   {
     label: 'Phone Number',
-    value: '+91 98765 43210',
-    link: 'tel:+919876543210',
+    value: '+91-75680-87763',
+    link: 'tel:+9175680-87763',
     icon: 'phone',
   },
   {
@@ -13,8 +13,8 @@ export const contactData = [
   },
   {
     label: 'WhatsApp',
-    value: '+91 98765 43210',
-    link: 'https://wa.me/919876543210',
+    value: '+91 75680-87763',
+    link: 'https://wa.me/9175680-87763',
     icon: 'whatsapp',
   },
   {

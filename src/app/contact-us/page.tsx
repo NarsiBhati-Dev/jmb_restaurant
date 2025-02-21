@@ -2,7 +2,13 @@ import ContactCard from '@/components/contact-card';
 import { type Kind } from '@/components/contact-card';
 import GoogleMap from '@/components/google-map';
 import { contactData } from '@/data/contactList';
+import getPageMetadata from '@/lib/getPageMetadata';
 import React from 'react';
+
+export const metadata = getPageMetadata({
+  title: 'Contact-Us',
+  path: 'contact-us',
+});
 
 const ContactPage = () => {
   return (

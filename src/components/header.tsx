@@ -26,7 +26,7 @@ const Header = () => {
           priority
         />
         <h1 className='border-jmb-red border-l-2 px-2 text-sm font-bold tracking-tight md:text-2xl'>
-          {siteMetadata.headerTitle}
+          {siteMetadata.title}
         </h1>
       </Link>
       <div className='flex items-center justify-between'>

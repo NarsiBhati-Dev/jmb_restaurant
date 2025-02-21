@@ -16,7 +16,7 @@ const AboutPage = () => {
       {/* Hero Section */}
       <section className='text-center'>
         <h1 className='text-jmb-red text-3xl font-bold md:text-6xl'>
-          About <br /> {siteMetadata.headerTitle}
+          About <br /> {siteMetadata.title}
         </h1>
         <p className='mt-4 text-lg text-gray-600 md:text-2xl'>
           Serving the authentic taste of Rajasthan with love and tradition.
@@ -79,7 +79,7 @@ const AboutPage = () => {
                 alt={item.alt}
                 width={200}
                 height={200}
-                className='aspect-square'
+                className='aspect-square w-full'
               />
             </div>
           ))}

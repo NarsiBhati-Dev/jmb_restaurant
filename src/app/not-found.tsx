@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import NavIcon from '@/data/icons/navbar-icon';
 import Button from '@/components/button';
 
 export default function NotFoundPage() {

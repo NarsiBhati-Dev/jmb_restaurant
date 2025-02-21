@@ -9,8 +9,7 @@ if (!envSiteUrl) {
 const SITE_URL = envSiteUrl.replace(/\/$/, '');
 
 const siteMetadata = {
-  title: 'JMB - Dal Bati Churma',
-  headerTitle: 'Jai Maa Bhawani Dal Bati Churma',
+  title: 'Jai Maa Bhawani Dal Bati Churma',
   headerTitleHindi: 'जय माँ भवानी दाल बाटी चूरमा',
 
   owner: 'Sunil Bhati',
@@ -20,21 +19,12 @@ const siteMetadata = {
 
   language: 'en-US',
   locale: 'en-IN',
-  theme: 'system',
 
   siteUrl: SITE_URL,
   siteRepo: 'https://github.com/NarsiBhati-Dev/NextBlog.git',
 
   siteLogo: `${SITE_URL}/images/jmb-logo.png`,
   socialBanner: `${SITE_URL}/images/jmb-social-banner.png`,
-
-  email: 'narsibhati2000@gmail.com',
-  github: 'https://github.com/NarsiBhati-Dev',
-  x: 'https://x.com/NarsiBhati31',
-  linkedin: 'https://www.linkedin.com/in/narsi-bhati-b43459224/',
-  youtube: 'http://www.youtube.com/@Narsi-B',
-
-  stickyNav: false,
 };
 
 export default siteMetadata;
