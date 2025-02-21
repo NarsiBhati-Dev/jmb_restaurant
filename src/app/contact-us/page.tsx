@@ -1,7 +1,7 @@
 import ContactCard from '@/components/contact-card';
 import { type Kind } from '@/components/contact-card';
 import GoogleMap from '@/components/google-map';
-import { contactData } from '@/data/contactList';
+import { contactList } from '@/data/contactList';
 import getPageMetadata from '@/lib/getPageMetadata';
 import React from 'react';
 
@@ -25,7 +25,7 @@ const ContactPage = () => {
         }
         aria-label='Contact Details'
       >
-        {contactData.map((contact, index) => (
+        {contactList.map((contact, index) => (
           <ContactCard
             kind={contact.icon as Kind}
             key={index}

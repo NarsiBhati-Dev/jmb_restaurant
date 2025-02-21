@@ -1,4 +1,4 @@
-export const contactData = [
+export const contactList = [
   {
     label: 'Phone Number',
     value: '+91-75680-87763',
