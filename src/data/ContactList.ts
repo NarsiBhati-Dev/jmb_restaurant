@@ -1,4 +1,4 @@
-export const contactList = [
+const contactList = [
   {
     label: 'Phone Number',
     value: '+91-75680-87763',
@@ -25,3 +25,5 @@ export const contactList = [
     icon: 'location',
   },
 ];
+
+export default contactList;
