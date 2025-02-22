@@ -1,45 +1,37 @@
-import clsx from 'clsx';
-
-interface SidebarIconsProps {
-  className?: string;
-}
-
-export const SidebarOpen = ({ className }: SidebarIconsProps) => {
+export const SidebarOpen = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      aria-label='sidebar open'
-      width='16'
-      height='16'
-      fill='currentColor'
-      className={clsx(
-        'h-6 w-6 transition-all duration-300 ease-in-out hover:text-red-400',
-        className,
-      )}
-      viewBox='0 0 16 16'
+      fill='none'
+      viewBox='0 0 24 24'
+      strokeWidth={1.5}
+      stroke='currentColor'
+      className='size-9'
     >
-      <path d='M14 2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2z' />
-      <path d='M3 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z' />
+      <path
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
+      />
     </svg>
   );
 };
 
-export const SidebarClose = ({ className }: SidebarIconsProps) => {
+export const SidebarClose = () => {
   return (
     <svg
-      aria-label='sidebar close'
       xmlns='http://www.w3.org/2000/svg'
-      width='16'
-      height='16'
-      fill='currentColor'
-      className={clsx(
-        'h-6 w-6 transition-all duration-300 ease-in-out hover:text-red-400',
-        className,
-      )}
-      viewBox='0 0 16 16'
+      fill='none'
+      viewBox='0 0 24 24'
+      strokeWidth={1.5}
+      stroke='currentColor'
+      className='size-9'
     >
-      <path d='M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z' />
-      <path d='M13 4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1z' />
+      <path
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        d='M6 18 18 6M6 6l12 12'
+      />
     </svg>
   );
 };

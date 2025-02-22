@@ -25,7 +25,7 @@ const Header = () => {
           className='border-jmb-red rounded-full border'
           priority
         />
-        <h1 className='border-jmb-red border-l-2 px-2 text-sm font-bold tracking-tight md:text-2xl'>
+        <h1 className='border-jmb-red border-l-2 px-2 text-[17px] font-extrabold tracking-tight md:text-2xl'>
           {siteMetadata.title}
         </h1>
       </Link>

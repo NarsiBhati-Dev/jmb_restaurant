@@ -21,10 +21,10 @@ export default function Home() {
 
         {/* Hero Content */}
         <section className='absolute right-0 bottom-0 left-0 flex flex-col items-center pb-8 text-center sm:bottom-28 md:pb-16'>
-          <h1 className='text-jmb-red text-2xl font-extrabold md:text-5xl xl:text-7xl'>
+          <h1 className='text-jmb-red text-[28px] font-extrabold md:text-5xl xl:text-7xl'>
             {siteMetadata.headerTitleHindi}
           </h1>
-          <h2 className='mb-6 rounded px-4 py-2 text-xl font-bold text-black sm:text-2xl md:text-3xl'>
+          <h2 className='mb-6 rounded px-4 py-2 text-2xl font-bold text-black md:text-3xl'>
             Taste of Rajasthan
           </h2>
           <section className='mt-4 flex flex-wrap justify-center gap-4'>
@@ -104,7 +104,11 @@ export default function Home() {
           Visit us today or order online to enjoy the best Rajasthani cuisine.
         </p>
         <section className='mt-6 flex flex-wrap justify-center gap-4'>
-          <Button size='lg' variant='primary' href='#OrderNow'>
+          <Button
+            size='lg'
+            variant='primary'
+            href='https://zoma.to/order/20219963'
+          >
             Order Now
           </Button>
           <Button size='lg' variant='secondary' href='/contact-us'>

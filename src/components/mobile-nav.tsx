@@ -42,7 +42,7 @@ const MobileNav = () => {
         className='relative z-50 flex items-center justify-center lg:hidden'
         aria-label='Toggle Menu'
       >
-        {!isOpen && <SidebarOpen />}
+        <SidebarOpen />
       </button>
 
       <aside
