@@ -28,7 +28,7 @@ const AboutPage = () => {
             width={700}
             height={500}
             priority
-            className='mx-auto h-auto w-auto rounded-lg object-cover shadow-lg'
+            className='mx-auto aspect-auto h-full w-full rounded-lg object-cover shadow-lg'
           />
         </div>
       </section>
@@ -79,7 +79,7 @@ const AboutPage = () => {
                 alt={item.alt}
                 width={200}
                 height={200}
-                className='aspect-square w-full'
+                className='aspect-auto h-full w-full'
               />
             </div>
           ))}

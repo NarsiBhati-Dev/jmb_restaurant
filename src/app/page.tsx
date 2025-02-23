@@ -16,11 +16,11 @@ export default function Home() {
           width={500}
           height={500}
           priority
-          className='min-h-[28rem] w-full rounded-xl object-cover sm:h-full'
+          className='aspect-square h-full w-full rounded-xl object-cover'
         />
 
         {/* Hero Content */}
-        <section className='absolute right-0 bottom-0 left-0 flex flex-col items-center pb-8 text-center sm:bottom-28 md:pb-16'>
+        <section className='absolute right-0 bottom-0 left-0 flex flex-col items-center pb-4 text-center sm:bottom-28 md:pb-16'>
           <h1 className='text-jmb-red text-[28px] font-extrabold md:text-5xl xl:text-7xl'>
             {siteMetadata.headerTitleHindi}
           </h1>
@@ -125,10 +125,15 @@ export default function Home() {
             '@context': 'https://schema.org',
             '@type': 'Restaurant',
             name: 'Jai Maa Bhawani Dal Bati Churma',
-            image:
+            image: [
               'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
+              'https://www.jaimaabhawanidalbatichurma.in/images/menu/churma.webp',
+              'https://www.jaimaabhawanidalbatichurma.in/images/menu/masala-papad.webp',
+              'https://www.jaimaabhawanidalbatichurma.in/images/menu/laddu.webp',
+              'https://www.jaimaabhawanidalbatichurma.in/images/menu/lasun-chatni.webp',
+            ],
             description:
-              'Jai Maa Bhawani Dal Bati Churma offers an authentic Rajasthani dining experience, specializing in Dal Bati Churma and traditional flavors of Rajasthan',
+              'Jai Maa Bhawani Dal Bati Churma offers an authentic Rajasthani dining experience, specializing in Dal Bati Churma and traditional flavors of Rajasthan.',
             address: {
               '@type': 'PostalAddress',
               streetAddress:
@@ -140,16 +145,39 @@ export default function Home() {
             },
             geo: {
               '@type': 'GeoCoordinates',
-              latitude: '26.2389',
-              longitude: '73.0243',
+              latitude: 26.2389,
+              longitude: 73.0243,
             },
             telephone: '+91-75680-87763',
-            priceRange: '₹',
-            servesCuisine: 'Rajasthani',
-            openingHours: ['Mo-Su 10:00-23:30'],
-            acceptsReservations: 'False',
+            priceRange: '₹20 - ₹150',
+            servesCuisine: 'Rajasthani, Indian',
+            openingHoursSpecification: [
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: [
+                  'Monday',
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday',
+                  'Saturday',
+                  'Sunday',
+                ],
+                opens: '10:00',
+                closes: '23:30',
+              },
+            ],
+            acceptsReservations: false,
             menu: 'https://www.jaimaabhawanidalbatichurma.in/menu',
-            sameAs: ['https://zoma.to/order/20219963'],
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.5',
+              reviewCount: '707',
+            },
+            sameAs: [
+              'https://www.jaimaabhawanidalbatichurma.in/',
+              'https://zoma.to/order/20219963',
+            ],
           }),
         }}
       />
