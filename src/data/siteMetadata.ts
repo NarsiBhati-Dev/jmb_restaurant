@@ -21,7 +21,6 @@ const siteMetadata = {
   locale: 'en-IN',
 
   siteUrl: SITE_URL,
-  siteRepo: 'https://github.com/NarsiBhati-Dev/NextBlog.git',
 
   siteLogo: `${SITE_URL}/images/jmb-logo.png`,
   socialBanner: `${SITE_URL}/images/jmb-social-banner.png`,
