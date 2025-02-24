@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'Googlebot',
-        allow: '/',
+        allow: '/_next/image',
       },
     ],
     sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
