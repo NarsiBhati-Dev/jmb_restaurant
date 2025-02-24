@@ -20,7 +20,7 @@ export default function Home() {
         />
 
         {/* Hero Content */}
-        <section className='absolute right-0 bottom-0 left-0 flex flex-col items-center pb-4 text-center sm:bottom-28 md:pb-16'>
+        <section className='absolute right-0 bottom-0 left-0 flex flex-col items-center pb-3 text-center sm:bottom-28 md:pb-16'>
           <h1 className='text-jmb-red text-[28px] font-extrabold md:text-5xl xl:text-7xl'>
             {siteMetadata.headerTitleHindi}
           </h1>
