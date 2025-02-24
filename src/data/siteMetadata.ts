@@ -15,7 +15,7 @@ const siteMetadata = {
   owner: 'Sunil Bhati',
 
   description:
-    'Jai Maa Bhawani Dal Bati Churma offers an authentic Rajasthani dining experience, specializing in Dal Bati Churma and traditional flavors of Rajasthan',
+    'Enjoy the best Dal Bati in Jodhpur at Jai Maa Bhawani Dal Bati Churma offers an authentic Rajasthani dining experience, specializing in Dal Bati Churma and traditional flavors of Rajasthan',
 
   language: 'en-US',
   locale: 'en-IN',
