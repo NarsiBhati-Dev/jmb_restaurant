@@ -1,13 +1,15 @@
-import { MetadataRoute } from 'next';
 import siteMetadata from '@/data/siteMetadata';
-
-export const dynamic = 'force-static'; // Ensures the file is statically generated
+import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: '*',
+        allow: '/',
+      },
+      {
+        userAgent: 'Googlebot',
         allow: '/',
       },
     ],
