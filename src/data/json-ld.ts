@@ -26,7 +26,7 @@ const JSON_LD_Home = {
     longitude: 73.0243,
   },
   telephone: '+91-75680-87763',
-  priceRange: '₹20 - ₹150',
+  priceRange: 'INR 20 - INR 150',
   servesCuisine: ['Rajasthani', 'Indian'],
   openingHoursSpecification: [
     {
@@ -48,8 +48,8 @@ const JSON_LD_Home = {
   menu: 'https://www.jaimaabhawanidalbatichurma.in/menu',
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.5',
-    reviewCount: '707',
+    ratingValue: 4.5,
+    reviewCount: 707,
   },
   sameAs: [
     'https://www.jaimaabhawanidalbatichurma.in/',
@@ -60,7 +60,7 @@ const JSON_LD_Home = {
 const JSON_LD_About_Us = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'JMB Restaurant',
+  name: 'Jai Maa Bhawani Dal Bati Churma | about us',
   url: 'https://www.jaimaabhawanidalbatichurma.in/about',
   logo: 'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
   description:
@@ -89,6 +89,8 @@ const JSON_LD_About_Us = {
 const JSON_LD_Faq = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
+  url: 'https://www.jaimaabhawanidalbatichurma.in/faq',
+  name: 'Jai Maa Bhawani Dal Bati Churma | FAQs',
   mainEntity: [
     {
       '@type': 'Question',
@@ -119,33 +121,39 @@ const JSON_LD_Faq = {
 
 const JSON_LD_Contact_Us = {
   '@context': 'https://schema.org',
-  '@type': 'ContactPoint',
-  telephone: '+91-75680-87763',
-  contactType: 'customer service',
-  email: 'support@jaimaabhawanidalbatichurma.in',
-  availableLanguage: ['Hindi', 'English'],
-  areaServed: 'Jodhpur, Rajasthan',
-  contactOption: 'TollFree',
-  hoursAvailable: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: [
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-      'Sunday',
-    ],
-    opens: '10:00',
-    closes: '23:30',
+  '@type': 'Organization',
+  name: 'Jai Maa Bhawani Dal Bati Churma | Contact us',
+  url: 'https://www.jaimaabhawanidalbatichurma.in/contact',
+  logo: 'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+91-75680-87763',
+    contactType: 'customer service',
+    email: 'support@jaimaabhawanidalbatichurma.in',
+    availableLanguage: ['Hindi', 'English'],
+    areaServed: 'Jodhpur, Rajasthan',
+    contactOption: 'TollFree',
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+      opens: '10:00',
+      closes: '23:30',
+    },
   },
 };
 
 const JSON_LD_Menu = {
   '@context': 'https://schema.org',
   '@type': 'Menu',
-  name: 'JMB Restaurant Menu',
+  name: 'Jai Maa Bhawani Dal Bati Churma | Menu',
   url: 'https://www.jaimaabhawanidalbatichurma.in/menu',
   hasMenuSection: [
     {
@@ -159,6 +167,8 @@ const JSON_LD_Menu = {
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/chach-bottle.webp',
           description: 'A refreshing buttermilk drink, perfect for digestion.',
           offers: { '@type': 'Offer', price: '60', priceCurrency: 'INR' },
+          suitableForDiet: 'https://schema.org/VegetarianDiet',
+          servingSize: '1l bottle',
         },
         {
           '@type': 'MenuItem',
@@ -167,6 +177,8 @@ const JSON_LD_Menu = {
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/chach-glass.webp',
           description: 'A traditional buttermilk drink served in a glass.',
           offers: { '@type': 'Offer', price: '20', priceCurrency: 'INR' },
+          suitableForDiet: 'https://schema.org/VegetarianDiet',
+          servingSize: '250ml glass',
         },
       ],
     },
@@ -182,6 +194,8 @@ const JSON_LD_Menu = {
           description:
             'Classic Rajasthani dish with baked wheat balls and lentil curry.',
           offers: { '@type': 'Offer', price: '70', priceCurrency: 'INR' },
+          suitableForDiet: 'https://schema.org/VegetarianDiet',
+          servingSize: '1 plate (2 Bati, Dal, Ghee)',
         },
         {
           '@type': 'MenuItem',
@@ -191,6 +205,8 @@ const JSON_LD_Menu = {
           description:
             'Sweetened crushed wheat dessert topped with dry fruits.',
           offers: { '@type': 'Offer', price: '120', priceCurrency: 'INR' },
+          suitableForDiet: 'https://schema.org/VegetarianDiet',
+          servingSize: '1 plate',
         },
         {
           '@type': 'MenuItem',
@@ -199,6 +215,8 @@ const JSON_LD_Menu = {
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/laddu.webp',
           description: 'Traditional Rajasthani gram flour sweet balls.',
           offers: { '@type': 'Offer', price: '50', priceCurrency: 'INR' },
+          suitableForDiet: 'https://schema.org/VegetarianDiet',
+          servingSize: '1 pieces',
         },
         {
           '@type': 'MenuItem',
@@ -208,6 +226,8 @@ const JSON_LD_Menu = {
           description:
             'Slow-cooked lentil soup infused with rich Indian spices.',
           offers: { '@type': 'Offer', price: '30', priceCurrency: 'INR' },
+          suitableForDiet: 'https://schema.org/VegetarianDiet',
+          servingSize: '250ml bowl',
         },
       ],
     },
@@ -223,6 +243,8 @@ const JSON_LD_Menu = {
           description:
             'Crispy spiced papad topped with onions, tomatoes, and masala.',
           offers: { '@type': 'Offer', price: '35', priceCurrency: 'INR' },
+          suitableForDiet: 'https://schema.org/VegetarianDiet',
+          servingSize: '1 piece',
         },
         {
           '@type': 'MenuItem',
@@ -231,6 +253,8 @@ const JSON_LD_Menu = {
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/plain-papad.webp',
           description: 'Classic thin crispy wafer, a staple side dish.',
           offers: { '@type': 'Offer', price: '20', priceCurrency: 'INR' },
+          suitableForDiet: 'https://schema.org/VegetarianDiet',
+          servingSize: '1 piece',
         },
         {
           '@type': 'MenuItem',
@@ -240,6 +264,7 @@ const JSON_LD_Menu = {
           description:
             'Spicy garlic chutney, a perfect accompaniment to Dal Bati.',
           offers: { '@type': 'Offer', price: '40', priceCurrency: 'INR' },
+          servingSize: '100g',
         },
         {
           '@type': 'MenuItem',
@@ -248,6 +273,7 @@ const JSON_LD_Menu = {
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/mirchi-ka-kutta.webp',
           description: 'Traditional crushed green chili with spices.',
           offers: { '@type': 'Offer', price: '40', priceCurrency: 'INR' },
+          servingSize: '100g',
         },
       ],
     },
