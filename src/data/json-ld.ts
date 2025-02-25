@@ -158,25 +158,37 @@ const JSON_LD_Menu = {
   hasMenuSection: [
     {
       '@type': 'MenuSection',
+      '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#drinks',
       name: 'Drinks',
+      url: 'https://www.jaimaabhawanidalbatichurma.in/menu#drinks',
       hasMenuItem: [
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#chach-bottle',
           name: 'Chach (Bottle)',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/chach-bottle.webp',
           description: 'A refreshing buttermilk drink, perfect for digestion.',
-          offers: { '@type': 'Offer', price: '60', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '60',
+            priceCurrency: 'INR',
+          },
           suitableForDiet: 'https://schema.org/VegetarianDiet',
           servingSize: '1l bottle',
         },
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#chach-glass',
           name: 'Chach (Glass)',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/chach-glass.webp',
           description: 'A traditional buttermilk drink served in a glass.',
-          offers: { '@type': 'Offer', price: '20', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '20',
+            priceCurrency: 'INR',
+          },
           suitableForDiet: 'https://schema.org/VegetarianDiet',
           servingSize: '250ml glass',
         },
@@ -184,48 +196,70 @@ const JSON_LD_Menu = {
     },
     {
       '@type': 'MenuSection',
+      '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#main-course',
       name: 'Main Course',
+      url: 'https://www.jaimaabhawanidalbatichurma.in/menu#main-course',
       hasMenuItem: [
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#dal-bati',
           name: 'Dal Bati',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/dal-bati.webp',
           description:
             'Classic Rajasthani dish with baked wheat balls and lentil curry.',
-          offers: { '@type': 'Offer', price: '70', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '70',
+            priceCurrency: 'INR',
+          },
           suitableForDiet: 'https://schema.org/VegetarianDiet',
           servingSize: '1 plate (2 Bati, Dal, Ghee)',
         },
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#churma',
           name: 'Churma',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/churma.webp',
           description:
             'Sweetened crushed wheat dessert topped with dry fruits.',
-          offers: { '@type': 'Offer', price: '120', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '120',
+            priceCurrency: 'INR',
+          },
           suitableForDiet: 'https://schema.org/VegetarianDiet',
           servingSize: '1 plate',
         },
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#laddu',
           name: 'Laddu',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/laddu.webp',
           description: 'Traditional Rajasthani gram flour sweet balls.',
-          offers: { '@type': 'Offer', price: '50', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '50',
+            priceCurrency: 'INR',
+          },
           suitableForDiet: 'https://schema.org/VegetarianDiet',
-          servingSize: '1 pieces',
+          servingSize: '1 piece',
         },
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#dal',
           name: 'Dal',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/dal.webp',
           description:
             'Slow-cooked lentil soup infused with rich Indian spices.',
-          offers: { '@type': 'Offer', price: '30', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '30',
+            priceCurrency: 'INR',
+          },
           suitableForDiet: 'https://schema.org/VegetarianDiet',
           servingSize: '250ml bowl',
         },
@@ -233,46 +267,69 @@ const JSON_LD_Menu = {
     },
     {
       '@type': 'MenuSection',
+      '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#sides',
       name: 'Sides',
+      url: 'https://www.jaimaabhawanidalbatichurma.in/menu#sides',
       hasMenuItem: [
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#masala-papad',
           name: 'Masala Papad',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/masala-papad.webp',
           description:
             'Crispy spiced papad topped with onions, tomatoes, and masala.',
-          offers: { '@type': 'Offer', price: '35', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '35',
+            priceCurrency: 'INR',
+          },
           suitableForDiet: 'https://schema.org/VegetarianDiet',
           servingSize: '1 piece',
         },
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#plain-papad',
           name: 'Plain Papad',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/plain-papad.webp',
           description: 'Classic thin crispy wafer, a staple side dish.',
-          offers: { '@type': 'Offer', price: '20', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '20',
+            priceCurrency: 'INR',
+          },
           suitableForDiet: 'https://schema.org/VegetarianDiet',
           servingSize: '1 piece',
         },
         {
           '@type': 'MenuItem',
+          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#lasun-chatni',
           name: 'Lasun Chatni',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/lasun-chatni.webp',
           description:
             'Spicy garlic chutney, a perfect accompaniment to Dal Bati.',
-          offers: { '@type': 'Offer', price: '40', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '40',
+            priceCurrency: 'INR',
+          },
           servingSize: '100g',
         },
         {
           '@type': 'MenuItem',
+          '@id':
+            'https://www.jaimaabhawanidalbatichurma.in/menu#mirchi-ka-kutta',
           name: 'Mirchi ka Kutta',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/mirchi-ka-kutta.webp',
           description: 'Traditional crushed green chili with spices.',
-          offers: { '@type': 'Offer', price: '40', priceCurrency: 'INR' },
+          offers: {
+            '@type': 'Offer',
+            price: '40',
+            priceCurrency: 'INR',
+          },
           servingSize: '100g',
         },
       ],
