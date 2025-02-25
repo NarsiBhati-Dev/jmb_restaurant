@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Button from '@/components/button';
 import FeaturesSection from '@/components/feature/features-section';
 import TestimonialsSection from '@/components/testimonial/testimonials-section';
+import JSON_LD from '@/data/json-ld';
 
 export default function Home() {
   return (
@@ -120,7 +121,7 @@ export default function Home() {
       {/* JSON-LD for structured data */}
       <script
         type='application/ld+json'
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
       />
     </main>
   );

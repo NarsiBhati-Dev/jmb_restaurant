@@ -1,4 +1,4 @@
-const JsonLd = {
+const JSON_LD = {
   '@context': 'https://schema.org',
   '@type': 'Restaurant',
   name: 'Jai Maa Bhawani Dal Bati Churma',
@@ -56,3 +56,5 @@ const JsonLd = {
     'https://zoma.to/order/20219963',
   ],
 };
+
+export default JSON_LD;
