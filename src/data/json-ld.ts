@@ -153,7 +153,6 @@ const JSON_LD_Contact_Us = {
 const JSON_LD_Menu = {
   '@context': 'https://schema.org',
   '@type': 'Menu',
-  '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu',
   name: 'Jai Maa Bhawani Dal Bati Churma | Menu',
   url: 'https://www.jaimaabhawanidalbatichurma.in/menu',
   hasMenuSection: [
@@ -164,7 +163,6 @@ const JSON_LD_Menu = {
       hasMenuItem: [
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#chach-bottle',
           name: 'Chach (Bottle)',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/chach-bottle.webp',
@@ -179,7 +177,6 @@ const JSON_LD_Menu = {
         },
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#chach-glass',
           name: 'Chach (Glass)',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/chach-glass.webp',
@@ -201,7 +198,6 @@ const JSON_LD_Menu = {
       hasMenuItem: [
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#dal-bati',
           name: 'Dal Bati',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/dal-bati.webp',
@@ -217,7 +213,6 @@ const JSON_LD_Menu = {
         },
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#churma',
           name: 'Churma',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/churma.webp',
@@ -233,7 +228,6 @@ const JSON_LD_Menu = {
         },
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#laddu',
           name: 'Laddu',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/laddu.webp',
@@ -248,7 +242,6 @@ const JSON_LD_Menu = {
         },
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#dal',
           name: 'Dal',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/dal.webp',
@@ -271,7 +264,6 @@ const JSON_LD_Menu = {
       hasMenuItem: [
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#masala-papad',
           name: 'Masala Papad',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/masala-papad.webp',
@@ -287,7 +279,6 @@ const JSON_LD_Menu = {
         },
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#plain-papad',
           name: 'Plain Papad',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/plain-papad.webp',
@@ -302,7 +293,6 @@ const JSON_LD_Menu = {
         },
         {
           '@type': 'MenuItem',
-          '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#lasun-chatni',
           name: 'Lasun Chatni',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/lasun-chatni.webp',
@@ -317,8 +307,6 @@ const JSON_LD_Menu = {
         },
         {
           '@type': 'MenuItem',
-          '@id':
-            'https://www.jaimaabhawanidalbatichurma.in/menu#mirchi-ka-kutta',
           name: 'Mirchi ka Kutta',
           image:
             'https://www.jaimaabhawanidalbatichurma.in/images/menu/mirchi-ka-kutta.webp',
