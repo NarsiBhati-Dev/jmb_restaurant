@@ -2,6 +2,7 @@ import ContactCard from '@/components/contact-card';
 import { type Kind } from '@/components/contact-card';
 import GoogleMap from '@/components/google-map';
 import contactList from '@/data/contact-list';
+import { JSON_LD_Contact_Us } from '@/data/json-ld';
 import getPageMetadata from '@/lib/getPageMetadata';
 import React from 'react';
 
@@ -37,6 +38,11 @@ const ContactPage = () => {
       </section>
 
       <GoogleMap />
+
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD_Contact_Us) }}
+      />
     </main>
   );
 };

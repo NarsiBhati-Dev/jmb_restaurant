@@ -2,6 +2,7 @@ import getPageMetadata from '@/lib/getPageMetadata';
 import React from 'react';
 import { menuItems } from '@/data/menuList';
 import MenuItemCard from '@/components/menu-item-card';
+import { JSON_LD_Menu } from '@/data/json-ld';
 
 export const metadata = getPageMetadata({ title: 'Menu', path: 'menu' });
 
@@ -33,6 +34,11 @@ const MenuPage = () => {
           </div>
         </section>
       ))}
+
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD_Menu) }}
+      />
     </main>
   );
 };

@@ -4,6 +4,7 @@ import React from 'react';
 import GoogleMap from '@/components/google-map';
 import siteMetadata from '@/data/siteMetadata';
 import { aboutImages } from '@/data/aboutImages';
+import { JSON_LD_About_Us } from '@/data/json-ld';
 
 export const metadata = getPageMetadata({
   title: 'About Us',
@@ -96,6 +97,11 @@ const AboutPage = () => {
 
         <GoogleMap />
       </section>
+
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD_About_Us) }}
+      />
     </main>
   );
 };

@@ -1,12 +1,13 @@
 import getPageMetadata from '@/lib/getPageMetadata';
 import FaqCard from '../../components/faq-card';
 import Button from '@/components/button';
+import { JSON_LD_Faq } from '@/data/json-ld';
 
 export const metadata = getPageMetadata({ title: 'FAQ', path: 'faq' });
 
 const FaqPage = () => {
   return (
-    <div className='min-h-screen bg-yellow-50 px-6 text-gray-800 md:px-16 md:py-10'>
+    <main className='min-h-screen bg-yellow-50 px-6 text-gray-800 md:px-16 md:py-10'>
       <h1 className='text-jmb-red py-4 text-center text-4xl font-bold md:text-6xl'>
         Frequently Asked Questions
       </h1>
@@ -22,7 +23,12 @@ const FaqPage = () => {
           Contact Us
         </Button>
       </div>
-    </div>
+
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD_Faq) }}
+      />
+    </main>
   );
 };
 
