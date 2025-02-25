@@ -89,8 +89,8 @@ const JSON_LD_About_Us = {
 const JSON_LD_Faq = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  url: 'https://www.jaimaabhawanidalbatichurma.in/faq',
   name: 'Jai Maa Bhawani Dal Bati Churma | FAQs',
+  url: 'https://www.jaimaabhawanidalbatichurma.in/faq',
   mainEntity: [
     {
       '@type': 'Question',
