@@ -153,12 +153,12 @@ const JSON_LD_Contact_Us = {
 const JSON_LD_Menu = {
   '@context': 'https://schema.org',
   '@type': 'Menu',
+  '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu',
   name: 'Jai Maa Bhawani Dal Bati Churma | Menu',
   url: 'https://www.jaimaabhawanidalbatichurma.in/menu',
   hasMenuSection: [
     {
       '@type': 'MenuSection',
-      '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#drinks',
       name: 'Drinks',
       url: 'https://www.jaimaabhawanidalbatichurma.in/menu#drinks',
       hasMenuItem: [
@@ -196,7 +196,6 @@ const JSON_LD_Menu = {
     },
     {
       '@type': 'MenuSection',
-      '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#main-course',
       name: 'Main Course',
       url: 'https://www.jaimaabhawanidalbatichurma.in/menu#main-course',
       hasMenuItem: [
@@ -267,7 +266,6 @@ const JSON_LD_Menu = {
     },
     {
       '@type': 'MenuSection',
-      '@id': 'https://www.jaimaabhawanidalbatichurma.in/menu#sides',
       name: 'Sides',
       url: 'https://www.jaimaabhawanidalbatichurma.in/menu#sides',
       hasMenuItem: [
