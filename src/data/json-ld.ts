@@ -154,6 +154,25 @@ const JSON_LD_Menu = {
   '@context': 'https://schema.org',
   '@type': 'Restaurant',
   name: 'Jai Maa Bhawani Dal Bati Churma',
+  telephone: '+91-75680-87763',
+  priceRange: 'INR 20 - INR 150',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress:
+      'Hp Petrol Pump, Opp Spicy Kitchen, Panji Ka Bera, Pal Road, near Gayatri Nagar',
+    addressLocality: 'Jodhpur',
+    addressRegion: 'Rajasthan',
+    postalCode: '342001',
+    addressCountry: 'IN',
+  },
+  servesCuisine: ['Rajasthani', 'Indian'],
+  image: [
+    'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
+    'https://www.jaimaabhawanidalbatichurma.in/images/menu/churma.webp',
+    'https://www.jaimaabhawanidalbatichurma.in/images/menu/masala-papad.webp',
+    'https://www.jaimaabhawanidalbatichurma.in/images/menu/laddu.webp',
+    'https://www.jaimaabhawanidalbatichurma.in/images/menu/lasun-chatni.webp',
+  ],
   hasMenu: {
     '@type': 'Menu',
     hasMenuSection: [
