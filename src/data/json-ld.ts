@@ -152,9 +152,137 @@ const JSON_LD_Contact_Us = {
 
 const JSON_LD_Menu = {
   '@context': 'https://schema.org',
-  '@type': 'Menu',
-  name: 'Jai Maa Bhawani Dal Bati Churma | Menu',
-  url: 'https://www.jaimaabhawanidalbatichurma.in/menu',
+  '@type': 'Restaurant',
+  name: 'Jai Maa Bhawani Dal Bati Churma',
+  hasMenu: {
+    '@type': 'Menu',
+    hasMenuSection: [
+      {
+        '@type': 'MenuSection',
+        name: 'Drinks',
+        hasMenuItem: [
+          {
+            '@type': 'MenuItem',
+            name: 'Chach (Bottle)',
+            description:
+              'A refreshing buttermilk drink, perfect for digestion.',
+            offers: {
+              '@type': 'Offer',
+              price: '60.00',
+              priceCurrency: 'INR',
+            },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Chach (Glass)',
+            description: 'A traditional buttermilk drink served in a glass.',
+            offers: {
+              '@type': 'Offer',
+              price: '20.00',
+              priceCurrency: 'INR',
+            },
+          },
+        ],
+      },
+      {
+        '@type': 'MenuSection',
+        name: 'Main Course',
+        hasMenuItem: [
+          {
+            '@type': 'MenuItem',
+            name: 'Dal Bati',
+            description:
+              'Classic Rajasthani dish with baked wheat balls and lentil curry.',
+            offers: {
+              '@type': 'Offer',
+              price: '70.00',
+              priceCurrency: 'INR',
+            },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Churma',
+            description:
+              'Sweetened crushed wheat dessert topped with dry fruits.',
+            offers: {
+              '@type': 'Offer',
+              price: '120.00',
+              priceCurrency: 'INR',
+            },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Laddu',
+            description: 'Traditional Rajasthani gram flour sweet balls.',
+            offers: {
+              '@type': 'Offer',
+              price: '50.00',
+              priceCurrency: 'INR',
+            },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Dal',
+            description:
+              'Slow-cooked lentil soup infused with rich Indian spices.',
+            offers: {
+              '@type': 'Offer',
+              price: '30.00',
+              priceCurrency: 'INR',
+            },
+          },
+        ],
+      },
+      {
+        '@type': 'MenuSection',
+        name: 'Sides',
+        hasMenuItem: [
+          {
+            '@type': 'MenuItem',
+            name: 'Masala Papad',
+            description:
+              'Crispy spiced papad topped with onions, tomatoes, and masala.',
+            offers: {
+              '@type': 'Offer',
+              price: '35.00',
+              priceCurrency: 'INR',
+            },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Plain Papad',
+            description: 'Classic thin crispy wafer, a staple side dish.',
+            offers: {
+              '@type': 'Offer',
+              price: '20.00',
+              priceCurrency: 'INR',
+            },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Lasun Chatni',
+            description:
+              'Spicy garlic chutney, a perfect accompaniment to Dal Bati.',
+            offers: {
+              '@type': 'Offer',
+              price: '40.00',
+              priceCurrency: 'INR',
+            },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Mirchi ka Kutta',
+            description: 'Traditional crushed green chili with spices.',
+            offers: {
+              '@type': 'Offer',
+              price: '40.00',
+              priceCurrency: 'INR',
+            },
+          },
+        ],
+      },
+    ],
+  },
 };
 
 export {
