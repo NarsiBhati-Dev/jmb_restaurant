@@ -28,7 +28,7 @@ export default function Home() {
           <h2 className='mb-2 rounded px-4 py-2 text-2xl font-bold text-black md:text-3xl'>
             Taste of Rajasthan
           </h2>
-          <section className='mt-4 flex flex-wrap justify-center gap-4'>
+          <section className='flex flex-wrap justify-center gap-4 pb-2'>
             <Button
               size='lg'
               variant='primary'
