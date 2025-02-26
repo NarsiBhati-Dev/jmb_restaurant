@@ -32,6 +32,14 @@ export default function Home() {
             <Button
               size='lg'
               variant='primary'
+              href='/contact-us'
+              className='group transform items-center gap-2 px-10 transition-transform duration-300 hover:scale-105'
+            >
+              Visit Us
+            </Button>
+            <Button
+              size='lg'
+              variant='secondary'
               href='https://zoma.to/order/20219963'
               className='group flex transform items-center gap-2 transition-transform duration-300 hover:scale-105'
             >
@@ -49,14 +57,6 @@ export default function Home() {
                   d='M14 5l7 7m0 0l-7 7m7-7H3'
                 />
               </svg>
-            </Button>
-            <Button
-              size='lg'
-              variant='secondary'
-              href='/contact-us'
-              className='group transform items-center gap-2 px-10 transition-transform duration-300 hover:scale-105'
-            >
-              Visit Our
             </Button>
           </section>
         </section>
