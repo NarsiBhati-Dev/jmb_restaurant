@@ -1,16 +1,8 @@
-const JSON_LD_Home = {
-  '@context': 'https://schema.org',
+const commonRestaurantInfo = {
   '@type': 'Restaurant',
   name: 'Jai Maa Bhawani Dal Bati Churma',
-  image: [
-    'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
-    'https://www.jaimaabhawanidalbatichurma.in/images/menu/churma.webp',
-    'https://www.jaimaabhawanidalbatichurma.in/images/menu/masala-papad.webp',
-    'https://www.jaimaabhawanidalbatichurma.in/images/menu/laddu.webp',
-    'https://www.jaimaabhawanidalbatichurma.in/images/menu/lasun-chatni.webp',
-  ],
-  description:
-    'Enjoy the best Dal Bati in Jodhpur at Jai Maa Bhawani Dal Bati Churma. We offer an authentic Rajasthani dining experience, specializing in Dal Bati Churma and traditional Rajasthani flavors.',
+  telephone: '+91-75680-87763',
+  priceRange: 'INR 20 - INR 150',
   address: {
     '@type': 'PostalAddress',
     streetAddress:
@@ -22,87 +14,82 @@ const JSON_LD_Home = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 26.2389,
-    longitude: 73.0243,
+    latitude: '26.2614',
+    longitude: '73.0104',
   },
-  telephone: '+91-75680-87763',
-  priceRange: 'INR 20 - INR 150',
   servesCuisine: ['Rajasthani', 'Indian'],
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday',
-      ],
-      opens: '10:00',
-      closes: '23:30',
-    },
+  image: [
+    'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
+    'https://www.jaimaabhawanidalbatichurma.in/images/menu/churma.webp',
+    'https://www.jaimaabhawanidalbatichurma.in/images/menu/dal-bati.webp',
+    'https://www.jaimaabhawanidalbatichurma.in/images/menu/masala-papad.webp',
   ],
-  acceptsReservations: false,
-  menu: 'https://www.jaimaabhawanidalbatichurma.in/menu',
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+      'Sunday',
+    ],
+    opens: '11:00',
+    closes: '22:00',
+  },
+  foundingDate: '2004',
+};
+
+const JSON_LD_Home = {
+  '@context': 'https://schema.org',
+  ...commonRestaurantInfo,
+  description:
+    'Authentic Rajasthani Dal Bati Churma restaurant in Jodhpur, serving traditional dishes like Dal Bati, Churma, and more. Experience the true taste of Rajasthan.',
+  url: 'https://www.jaimaabhawanidalbatichurma.in',
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: 4.5,
-    reviewCount: 707,
+    ratingValue: '4.5',
+    reviewCount: '100',
   },
-  sameAs: [
-    'https://www.jaimaabhawanidalbatichurma.in/',
-    'https://zoma.to/order/20219963',
-  ],
 };
 
 const JSON_LD_About_Us = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Jai Maa Bhawani Dal Bati Churma | about us',
-  url: 'https://www.jaimaabhawanidalbatichurma.in/about',
-  logo: 'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
+  ...commonRestaurantInfo,
   description:
-    'JMB Restaurant is a renowned restaurant in Jodhpur, specializing in authentic Rajasthani Dal Bati Churma and traditional dishes.',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress:
-      'Hp Petrol Pump, Opp Spicy Kitchen, Panji Ka Bera, Pal Road, near Gayatri Nagar',
-    addressLocality: 'Jodhpur',
-    addressRegion: 'Rajasthan',
-    postalCode: '342001',
-    addressCountry: 'IN',
-  },
+    'Established in 2004, Jai Maa Bhawani Dal Bati Churma has been serving authentic Rajasthani cuisine in Jodhpur for nearly two decades. Our commitment to quality and traditional recipes has made us a favorite among locals and tourists alike.',
+  url: 'https://www.jaimaabhawanidalbatichurma.in/about',
+};
+
+const JSON_LD_Contact_Us = {
+  '@context': 'https://schema.org',
+  ...commonRestaurantInfo,
+  url: 'https://www.jaimaabhawanidalbatichurma.in/contact',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+91-75680-87763',
     contactType: 'customer service',
     availableLanguage: ['Hindi', 'English'],
+    email: 'contact@jaimaabhawanidalbatichurma.in',
   },
-  sameAs: [
-    'https://www.jaimaabhawanidalbatichurma.in/',
-    'https://zoma.to/order/20219963',
-  ],
 };
 
 const JSON_LD_Faq = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  name: 'Jai Maa Bhawani Dal Bati Churma | FAQs',
-  url: 'https://www.jaimaabhawanidalbatichurma.in/faq',
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What is Dal Bati Churma?',
+      name: 'What are your restaurant hours?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dal Bati Churma is a traditional Rajasthani dish consisting of baked wheat rolls (Bati), lentil curry (Dal), and a sweet crumbled wheat dessert (Churma).',
+        text: 'We are open daily from 10:00 AM to 11:00 PM, including weekends and holidays.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Does JMB Restaurant offer home delivery?',
+      name: 'Do you offer home delivery?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Yes, we offer home delivery through Zomato. You can order online at https://zoma.to/order/20219963.',
@@ -110,69 +97,26 @@ const JSON_LD_Faq = {
     },
     {
       '@type': 'Question',
-      name: 'What are your opening hours?',
+      name: 'What are your specialty dishes?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We are open daily from 10:00 AM to 11:30 PM.',
+        text: 'Our specialty dishes include Dal Bati Churma, traditional Rajasthani Dal, homemade Churma, and authentic Lasun Chatni.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is parking available?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, we have ample parking space available near our restaurant at HP Petrol Pump, Pal Road location.',
       },
     },
   ],
 };
 
-const JSON_LD_Contact_Us = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Jai Maa Bhawani Dal Bati Churma | Contact us',
-  url: 'https://www.jaimaabhawanidalbatichurma.in/contact',
-  logo: 'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
-  contactPoint: {
-    '@type': 'ContactPoint',
-    telephone: '+91-75680-87763',
-    contactType: 'customer service',
-    email: 'support@jaimaabhawanidalbatichurma.in',
-    availableLanguage: ['Hindi', 'English'],
-    areaServed: 'Jodhpur, Rajasthan',
-    contactOption: 'TollFree',
-    hoursAvailable: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday',
-      ],
-      opens: '10:00',
-      closes: '23:30',
-    },
-  },
-};
-
 const JSON_LD_Menu = {
   '@context': 'https://schema.org',
-  '@type': 'Restaurant',
-  name: 'Jai Maa Bhawani Dal Bati Churma',
-  telephone: '+91-75680-87763',
-  priceRange: 'INR 20 - INR 150',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress:
-      'Hp Petrol Pump, Opp Spicy Kitchen, Panji Ka Bera, Pal Road, near Gayatri Nagar',
-    addressLocality: 'Jodhpur',
-    addressRegion: 'Rajasthan',
-    postalCode: '342001',
-    addressCountry: 'IN',
-  },
-  servesCuisine: ['Rajasthani', 'Indian'],
-  image: [
-    'https://www.jaimaabhawanidalbatichurma.in/images/jmb-social-banner.png',
-    'https://www.jaimaabhawanidalbatichurma.in/images/menu/churma.webp',
-    'https://www.jaimaabhawanidalbatichurma.in/images/menu/masala-papad.webp',
-    'https://www.jaimaabhawanidalbatichurma.in/images/menu/laddu.webp',
-    'https://www.jaimaabhawanidalbatichurma.in/images/menu/lasun-chatni.webp',
-  ],
+  ...commonRestaurantInfo,
   hasMenu: {
     '@type': 'Menu',
     hasMenuSection: [

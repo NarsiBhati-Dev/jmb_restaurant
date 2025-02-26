@@ -14,8 +14,8 @@ export default function Home() {
         <Image
           src='/images/bg-image.webp'
           alt='Background'
-          width={500}
-          height={500}
+          width={1920}
+          height={1080}
           priority
           className='aspect-square h-full w-full rounded-xl object-cover'
         />
@@ -68,21 +68,39 @@ export default function Home() {
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
           Our Specialties
         </h2>
-        <div className='mt-6 flex flex-wrap justify-center gap-6'>
+        <div className='mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:mx-auto lg:max-w-4xl'>
           {[
-            { src: '/images/menu/dal-bati.webp', name: 'Dal Bati Churma' },
-            { src: '/images/menu/churma.webp', name: 'Churma Plate' },
-            { src: '/images/menu/masala-papad.webp', name: 'Masala Papad' },
+            {
+              src: '/images/menu/dal-bati.webp',
+              name: 'Dal Bati Churma',
+              description: 'Our signature Rajasthani dish',
+            },
+            {
+              src: '/images/menu/churma.webp',
+              name: 'Churma Plate',
+              description: 'Sweet traditional delicacy',
+            },
+            {
+              src: '/images/menu/masala-papad.webp',
+              name: 'Masala Papad',
+              description: 'Crispy appetizer',
+            },
           ].map((item, index) => (
-            <div key={index} className='my-4'>
+            <div
+              key={index}
+              className='group relative transform transition-transform md:hover:scale-105'
+            >
               <Image
                 src={item.src}
                 alt={item.name}
-                width={200}
+                width={300}
                 height={200}
-                className='aspect-video h-full w-40 rounded-lg shadow-md'
+                className='aspect-video h-48 w-full rounded-lg shadow-lg'
               />
-              <p className='mt-2 font-semibold'>{item.name}</p>
+              <div className='mt-3'>
+                <h3 className='text-xl font-bold text-gray-800'>{item.name}</h3>
+                <p className='text-sm text-gray-600'>{item.description}</p>
+              </div>
             </div>
           ))}
         </div>

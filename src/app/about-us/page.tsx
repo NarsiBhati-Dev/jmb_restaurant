@@ -5,7 +5,7 @@ import GoogleMap from '@/components/google-map';
 import siteMetadata from '@/data/siteMetadata';
 import { aboutImages } from '@/data/aboutImages';
 import { JSON_LD_About_Us } from '@/data/json-ld';
-
+import Link from 'next/link';
 export const metadata = getPageMetadata({
   title: 'About Us',
   path: 'about-us',
@@ -80,7 +80,7 @@ const AboutPage = () => {
                 alt={item.alt}
                 width={200}
                 height={200}
-                className='aspect-auto h-full w-full'
+                className='aspect-auto h-full w-full transition-transform duration-300 hover:scale-120'
               />
             </div>
           ))}
@@ -96,6 +96,25 @@ const AboutPage = () => {
         </p>
 
         <GoogleMap />
+      </section>
+
+      {/* CTA Section */}
+      <section className='mt-16 text-center'>
+        <div className='bg-jmb-red/10 rounded-lg p-8'>
+          <h2 className='text-jmb-red text-2xl font-bold md:text-4xl'>
+            Experience Authentic Rajasthani Cuisine
+          </h2>
+          <p className='mt-4 text-gray-700 md:text-xl'>
+            Join us for a memorable dining experience with your family and
+            friends.
+          </p>
+          <Link
+            href='/menu'
+            className='bg-jmb-red mt-6 inline-block rounded-lg px-8 py-3 text-lg font-bold text-white transition-transform hover:scale-105'
+          >
+            View Our Menu
+          </Link>
+        </div>
       </section>
 
       <script

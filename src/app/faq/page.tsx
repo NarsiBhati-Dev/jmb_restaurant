@@ -18,7 +18,7 @@ const FaqPage = () => {
       <FaqCard />
 
       <div className='mt-12 text-center'>
-        <p className='pb-4 text-lg font-medium'>Still have questions?</p>
+        <p className='pb-6 text-xl font-medium'>Still have questions?</p>
         <Button size='lg' href='/contact-us' variant='primary'>
           Contact Us
         </Button>

@@ -7,29 +7,32 @@ import getPageMetadata from '@/lib/getPageMetadata';
 import React from 'react';
 
 export const metadata = getPageMetadata({
-  title: 'Contact-Us',
+  title: 'Contact Us',
+  description:
+    "We'd love to hear from you! Find our contact information and location.",
   path: 'contact-us',
 });
 
 const ContactPage = () => {
   return (
-    <main className='mx-auto flex max-w-5xl flex-col items-center justify-center px-2'>
-      <h1 className='text-jmb-red mb-8 flex flex-col py-4 text-center text-5xl font-bold md:text-6xl'>
-        <span>Contact Us</span>
-        <span className='text-lg font-medium text-gray-600'>
-          We’d love to hear from you!
-        </span>
-      </h1>
+    <main className='mx-auto flex max-w-5xl flex-col items-center justify-center space-y-8 px-2 py-8'>
+      <header className='text-center'>
+        <h1 className='text-jmb-red mb-2 text-5xl font-bold md:text-6xl'>
+          Contact Us
+        </h1>
+        <p className='text-lg font-medium text-gray-600'>
+          {"We'd love to hear from you!"}
+        </p>
+      </header>
+
       <section
-        className={
-          'grid w-full grid-cols-1 gap-4 rounded-lg bg-white p-4 md:grid-cols-2'
-        }
+        className='grid w-full grid-cols-1 gap-6 rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl md:grid-cols-2'
         aria-label='Contact Details'
       >
-        {contactList.map((contact, index) => (
+        {contactList.map(contact => (
           <ContactCard
             kind={contact.icon as Kind}
-            key={index}
+            key={contact.label}
             label={contact.label}
             value={contact.value}
             link={contact.link}
@@ -37,11 +40,18 @@ const ContactPage = () => {
         ))}
       </section>
 
-      <GoogleMap />
+      <section
+        className='w-full overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl'
+        aria-label='Our Location'
+      >
+        <GoogleMap />
+      </section>
 
       <script
         type='application/ld+json'
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD_Contact_Us) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(JSON_LD_Contact_Us, null, 0),
+        }}
       />
     </main>
   );

@@ -13,27 +13,34 @@ const MenuPage = () => {
         Our Menu
       </h1>
 
-      {Object.entries(menuItems).map(([category, items]) => (
-        <section
-          key={category}
-          className='mb-12 rounded-lg bg-white p-4 shadow'
-        >
-          <h2 className='text-jmb-red mb-4 text-2xl font-bold capitalize md:text-3xl'>
-            {category.replace(/([A-Z])/g, ' $1').trim()}
-          </h2>
-          <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3'>
-            {items.map((item, index) => (
-              <MenuItemCard
-                name={item.name}
-                image={item.image}
-                price={item.price}
-                description={item.description}
-                key={index}
-              />
-            ))}
-          </div>
-        </section>
-      ))}
+      <div className='space-y-8'>
+        {Object.entries(menuItems).map(([category, items]) => (
+          <section
+            id={category}
+            key={category}
+            className='rounded-lg bg-white p-6 shadow-md transition-shadow hover:shadow-lg'
+            aria-labelledby={`${category}-heading`}
+          >
+            <h2
+              id={`${category}-heading`}
+              className='text-jmb-red mb-6 text-2xl font-bold capitalize md:text-3xl'
+            >
+              {category.replace(/([A-Z])/g, ' $1').trim()}
+            </h2>
+            <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+              {items.map(item => (
+                <MenuItemCard
+                  name={item.name}
+                  image={item.image}
+                  price={item.price}
+                  description={item.description}
+                  key={`${category}-${item.name}`}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
 
       <script
         type='application/ld+json'
