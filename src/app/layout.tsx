@@ -95,4 +95,3 @@ export default function RootLayout({
     </html>
   );
 }
-// pl-[calc(100vw-100%)]

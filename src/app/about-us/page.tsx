@@ -2,10 +2,10 @@ import getPageMetadata from '@/lib/getPageMetadata';
 import Image from 'next/image';
 import React from 'react';
 import GoogleMap from '@/components/google-map';
-import siteMetadata from '@/data/siteMetadata';
 import { aboutImages } from '@/data/aboutImages';
 import { JSON_LD_About_Us } from '@/data/json-ld';
 import Link from 'next/link';
+
 export const metadata = getPageMetadata({
   title: 'About Us',
   path: 'about-us',
@@ -13,15 +13,18 @@ export const metadata = getPageMetadata({
 
 const AboutPage = () => {
   return (
-    <main className='mx-auto max-w-5xl px-4 py-12 text-gray-800 md:px-8'>
-      {/* Hero Section */}
-      <section className='text-center'>
-        <h1 className='text-jmb-red text-3xl font-bold md:text-6xl'>
-          About <br /> {siteMetadata.title}
+    <main className='mx-auto max-w-5xl px-2 py-6 text-gray-800 sm:px-4 sm:py-12 md:px-8'>
+      <header className='text-center'>
+        <h1 className='text-jmb-red text-5xl font-bold md:text-6xl'>
+          About Us
         </h1>
-        <p className='mt-4 text-lg text-gray-600 md:text-2xl'>
+        <p className='mt-2 text-base text-gray-700 md:text-lg'>
           Serving the authentic taste of Rajasthan with love and tradition.
         </p>
+      </header>
+
+      {/* Hero Section */}
+      <section className='text-center'>
         <div className='mt-8'>
           <Image
             src='/images/JaiMaaBhawani.webp'
@@ -36,7 +39,7 @@ const AboutPage = () => {
 
       {/* Our Story */}
       <section className='mt-12'>
-        <h2 className='text-2xl font-bold md:text-4xl'>Our Story</h2>
+        <h2 className='text-3xl font-bold md:text-4xl'>Our Story</h2>
         <p className='mt-4 text-justify text-gray-700 md:text-xl'>
           Founded with a passion for authentic Rajasthani cuisine, JMB
           Restaurant has been serving delicious and traditional Dal Bati Churma
@@ -47,7 +50,7 @@ const AboutPage = () => {
 
       {/* Our Specialties */}
       <section className='mt-12'>
-        <h2 className='text-2xl font-bold md:text-4xl'>Our Specialties</h2>
+        <h2 className='text-3xl font-bold md:text-4xl'>Our Specialties</h2>
         <ul className='mt-4 list-disc space-y-2 pl-6 text-gray-700 md:text-xl'>
           <li>Authentic Dal Bati Churma</li>
           <li>Freshly prepared traditional Rajasthani dishes</li>
@@ -57,7 +60,7 @@ const AboutPage = () => {
 
       {/* Commitment to Quality */}
       <section className='mt-12'>
-        <h2 className='text-2xl font-bold md:text-4xl'>Our Commitment</h2>
+        <h2 className='text-3xl font-bold md:text-4xl'>Our Commitment</h2>
         <p className='mt-4 text-justify text-gray-700 md:text-xl'>
           We believe in using only the freshest ingredients, maintaining
           hygiene, and preserving the traditional flavors of Rajasthan. Every
@@ -68,7 +71,7 @@ const AboutPage = () => {
 
       {/* Photo Gallery */}
       <section className='mt-12'>
-        <h2 className='text-2xl font-bold md:text-4xl'>Gallery</h2>
+        <h2 className='text-3xl font-bold md:text-4xl'>Gallery</h2>
         <div className='mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-4 md:grid-cols-4'>
           {aboutImages.map((item, index) => (
             <div
@@ -89,7 +92,7 @@ const AboutPage = () => {
 
       {/* Visit Us */}
       <section className='mt-12 w-full'>
-        <h2 className='text-2xl font-bold md:text-4xl'>Visit Us</h2>
+        <h2 className='text-3xl font-bold md:text-4xl'>Visit Us</h2>
         <p className='mt-4 text-justify text-gray-700 md:text-xl'>
           Come experience the flavors of Rajasthan at JMB Restaurant. We are
           open every day to serve you!

@@ -23,6 +23,7 @@ const MenuItemCard = ({
         height={200}
         className='aspect-video h-56 w-full rounded-t-lg sm:aspect-square'
       />
+
       <div className='p-4'>
         <h4 className='text-2xl font-bold'>{name}</h4>
         <p className='py-2 tracking-tight text-gray-600'>{description}</p>

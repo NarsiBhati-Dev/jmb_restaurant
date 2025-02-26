@@ -8,10 +8,16 @@ export const metadata = getPageMetadata({ title: 'Menu', path: 'menu' });
 
 const MenuPage = () => {
   return (
-    <main className='mx-auto max-w-5xl px-2 py-12 text-gray-800 md:px-8'>
-      <h1 className='text-jmb-red mb-8 text-center text-4xl font-extrabold md:text-6xl'>
-        Our Menu
-      </h1>
+    <main className='mx-auto max-w-5xl px-4 py-6 text-gray-800 sm:py-12 md:px-8'>
+      <header className='mb-8 text-center'>
+        <h1 className='text-jmb-red mb-4 text-5xl font-bold md:text-6xl'>
+          Our Menu
+        </h1>
+        <p className='mx-auto mt-4 max-w-2xl text-center text-lg tracking-tight text-gray-700 md:text-2xl'>
+          Explore our authentic Rajasthani flavors, made with love and
+          tradition.
+        </p>
+      </header>
 
       <div className='space-y-8'>
         {Object.entries(menuItems).map(([category, items]) => (

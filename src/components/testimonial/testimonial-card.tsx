@@ -3,7 +3,7 @@ import React from 'react';
 interface TestimonialCardProps {
   review: string;
   name: string;
-  rating?: number; // Optional star rating (1-5)
+  rating?: number;
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({

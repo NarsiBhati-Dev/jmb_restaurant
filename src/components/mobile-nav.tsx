@@ -37,6 +37,7 @@ const MobileNav = () => {
 
   return (
     <>
+      {/* Sidebar closed */}
       <button
         onClick={() => setIsOpen(prev => !prev)}
         className='relative z-50 flex items-center justify-center lg:hidden'
@@ -45,6 +46,7 @@ const MobileNav = () => {
         <SidebarOpen />
       </button>
 
+      {/* Sidebar open */}
       <aside
         className={clsx(
           isOpen ? 'translate-x-0' : 'translate-x-full',
@@ -59,6 +61,7 @@ const MobileNav = () => {
           </button>
         </div>
 
+        {/* Nav Items */}
         <nav className='mt-6 flex flex-col gap-4 px-4 text-lg'>
           {HeaderNavLinks.map(link => (
             <CustomLink

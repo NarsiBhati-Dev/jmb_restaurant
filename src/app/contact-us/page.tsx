@@ -20,7 +20,7 @@ const ContactPage = () => {
         <h1 className='text-jmb-red mb-2 text-5xl font-bold md:text-6xl'>
           Contact Us
         </h1>
-        <p className='text-lg font-medium text-gray-600'>
+        <p className='mx-auto mt-4 max-w-2xl text-center text-lg tracking-tight text-gray-700 md:text-2xl'>
           {"We'd love to hear from you!"}
         </p>
       </header>

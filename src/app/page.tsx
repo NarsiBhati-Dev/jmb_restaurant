@@ -61,17 +61,19 @@ export default function Home() {
           </section>
         </section>
       </section>
+
       {/* About Us */}
       <section className='py-14 text-center'>
         <h2 className='text-jmb-red text-2xl font-bold md:text-4xl'>
           About JMB Restaurant
         </h2>
-        <p className='mx-auto mt-4 max-w-3xl text-justify text-lg text-gray-700 md:text-xl'>
+        <p className='mx-auto mt-4 max-w-3xl text-justify text-[17px] text-gray-700 md:text-xl'>
           Bringing the authentic taste of Rajasthan to your plate. Our dishes
           are prepared with fresh ingredients and traditional flavors to make
           every bite unforgettable.
         </p>
       </section>
+
       {/* Why Choose Us */}
       <section className='bg-orange-100 py-16 text-center'>
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
@@ -79,6 +81,7 @@ export default function Home() {
         </h2>
         <FeaturesSection />
       </section>
+
       {/* Our Specialties */}
       <section className='py-16 text-center'>
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
@@ -121,6 +124,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+
       {/* Testimonials */}
       <section className='bg-orange-100 py-16 text-center'>
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
@@ -128,6 +132,7 @@ export default function Home() {
         </h2>
         <TestimonialsSection />
       </section>
+
       {/* Call to Action */}
       <section className='bg-gradient-to-b from-white to-orange-50 py-24 text-center'>
         <div className='mx-auto max-w-3xl px-4'>
@@ -174,6 +179,7 @@ export default function Home() {
           </section>
         </div>
       </section>
+
       {/* JSON-LD for structured data */}
       <script
         type='application/ld+json'
