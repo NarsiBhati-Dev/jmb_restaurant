@@ -25,7 +25,7 @@ export default function Home() {
           <h1 className='text-jmb-red text-[28px] font-extrabold md:text-5xl xl:text-7xl'>
             {siteMetadata.headerTitleHindi}
           </h1>
-          <h2 className='mb-6 rounded px-4 py-2 text-2xl font-bold text-black md:text-3xl'>
+          <h2 className='mb-2 rounded px-4 py-2 text-2xl font-bold text-black md:text-3xl'>
             Taste of Rajasthan
           </h2>
           <section className='mt-4 flex flex-wrap justify-center gap-4'>
@@ -33,18 +33,36 @@ export default function Home() {
               size='lg'
               variant='primary'
               href='https://zoma.to/order/20219963'
+              className='group flex transform items-center gap-2 transition-transform duration-300 hover:scale-105'
             >
               Order Now
+              <svg
+                className='h-5 w-5 transform transition-transform group-hover:translate-x-1'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M14 5l7 7m0 0l-7 7m7-7H3'
+                />
+              </svg>
             </Button>
-            <Button size='lg' variant='secondary' href='/contact-us'>
-              Visit Us
+            <Button
+              size='lg'
+              variant='secondary'
+              href='/contact-us'
+              className='group transform items-center gap-2 px-10 transition-transform duration-300 hover:scale-105'
+            >
+              Visit Our
             </Button>
           </section>
         </section>
       </section>
-
       {/* About Us */}
-      <section className='py-16 text-center'>
+      <section className='py-14 text-center'>
         <h2 className='text-jmb-red text-2xl font-bold md:text-4xl'>
           About JMB Restaurant
         </h2>
@@ -54,7 +72,6 @@ export default function Home() {
           every bite unforgettable.
         </p>
       </section>
-
       {/* Why Choose Us */}
       <section className='bg-orange-100 py-16 text-center'>
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
@@ -62,7 +79,6 @@ export default function Home() {
         </h2>
         <FeaturesSection />
       </section>
-
       {/* Our Specialties */}
       <section className='py-16 text-center'>
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
@@ -105,7 +121,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       {/* Testimonials */}
       <section className='bg-orange-100 py-16 text-center'>
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
@@ -113,29 +128,52 @@ export default function Home() {
         </h2>
         <TestimonialsSection />
       </section>
-
       {/* Call to Action */}
-      <section className='py-16 text-center'>
-        <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
-          Ready to Taste Rajasthan?
-        </h2>
-        <p className='mt-4 text-lg text-gray-700 md:text-xl'>
-          Visit us today or order online to enjoy the best Rajasthani cuisine.
-        </p>
-        <section className='mt-6 flex flex-wrap justify-center gap-4'>
-          <Button
-            size='lg'
-            variant='primary'
-            href='https://zoma.to/order/20219963'
-          >
-            Order Now
-          </Button>
-          <Button size='lg' variant='secondary' href='/contact-us'>
-            Visit Us
-          </Button>
-        </section>
+      <section className='bg-gradient-to-b from-white to-orange-50 py-24 text-center'>
+        <div className='mx-auto max-w-3xl px-4'>
+          <h2 className='text-jmb-red mb-4 text-4xl font-bold md:text-5xl'>
+            Experience the Royal Flavors of Rajasthan
+          </h2>
+          <p className='mb-8 text-justify text-lg text-gray-700 md:text-xl'>
+            From our kitchen to your plate, savor the authentic taste of
+            traditional Rajasthani cuisine. Dine in for the complete experience
+            or enjoy our dishes in the comfort of your home.
+          </p>
+          <section className='flex flex-col items-center justify-center gap-4 sm:flex-row'>
+            <Button
+              size='lg'
+              variant='primary'
+              href='https://zoma.to/order/20219963'
+              className='group w-full sm:w-auto'
+            >
+              <span className='flex items-center justify-center gap-2'>
+                Order Now
+                <svg
+                  className='h-5 w-5 transform transition-transform group-hover:translate-x-1'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M14 5l7 7m0 0l-7 7m7-7H3'
+                  />
+                </svg>
+              </span>
+            </Button>
+            <Button
+              size='lg'
+              variant='secondary'
+              href='/contact-us'
+              className='w-full sm:w-auto'
+            >
+              Visit Our Restaurant
+            </Button>
+          </section>
+        </div>
       </section>
-
       {/* JSON-LD for structured data */}
       <script
         type='application/ld+json'
