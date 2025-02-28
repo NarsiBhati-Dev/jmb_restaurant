@@ -1,7 +1,7 @@
 const GoogleMap = () => {
   return (
     <>
-      <h1 className='text-jmb-red my-8 text-center text-2xl font-bold'>
+      <h1 className='text-jmb-red my-8 text-center text-4xl font-bold'>
         Our Location
       </h1>
 
