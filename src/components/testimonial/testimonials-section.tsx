@@ -3,7 +3,7 @@ import TestimonialCard from './testimonial-card';
 
 const TestimonialsSection = () => {
   return (
-    <section className='mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
+    <section className='mt-12 grid items-center gap-6 sm:grid-cols-2 md:grid-cols-3'>
       {reviewList.map((testimonial, index) => (
         <TestimonialCard
           key={index}

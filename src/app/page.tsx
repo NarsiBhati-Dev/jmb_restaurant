@@ -75,7 +75,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className='bg-orange-100 py-16 text-center'>
+      <section className='flex flex-col items-center justify-center bg-orange-100 py-16 text-center'>
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
           Why Choose Us?
         </h2>
@@ -126,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className='bg-orange-100 py-16 text-center'>
+      <section className='flex flex-col items-center justify-center bg-orange-100 py-16 text-center'>
         <h2 className='text-jmb-red text-3xl font-bold md:text-4xl'>
           What Our Customers Say
         </h2>
