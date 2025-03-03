@@ -11,19 +11,17 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteMetadata.siteUrl),
-
+  metadataBase: new URL(siteMetadata.siteUrl), // Ensures a valid base URL for metadata.
   title: {
     default: siteMetadata.title,
     template: `%s | ${siteMetadata.title}`,
   },
-
   description: siteMetadata.description,
 
   openGraph: {
     title: siteMetadata.title,
     description: siteMetadata.description,
-    url: siteMetadata.siteUrl,
+    url: siteMetadata.siteUrl, // Ensures the URL is fully qualified
     siteName: siteMetadata.title,
     images: [
       {
@@ -35,6 +33,25 @@ export const metadata: Metadata = {
     ],
     locale: siteMetadata.locale,
     type: 'website',
+  },
+
+  alternates: {
+    canonical: siteMetadata.siteUrl, // Correct canonical link
+    types: {
+      'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
+    },
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 
   twitter: {
