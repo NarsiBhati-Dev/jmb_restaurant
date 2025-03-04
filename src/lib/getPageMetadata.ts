@@ -31,28 +31,17 @@ const getPageMetadata = ({
     openGraph: {
       title: metaTitle,
       description: metaDescription,
-      url: sitePath,
+      url: './',
       siteName: siteMetadata.title,
-      images: [
-        {
-          url: metaImage,
-          width: 1200,
-          height: 630,
-          alt: `${title} - ${siteMetadata.title}`,
-        },
-      ],
-      locale: siteMetadata.locale,
+      images: [metaImage],
+      locale: 'en_US',
       type: 'website',
     },
+
     twitter: {
-      title: `${title} | ${siteMetadata.title}`,
+      title: metaTitle,
       card: 'summary_large_image',
-      images: [
-        {
-          url: metaImage,
-          alt: `${title} - ${siteMetadata.title}`,
-        },
-      ],
+      images: [metaImage],
     },
   };
 };

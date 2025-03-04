@@ -23,7 +23,7 @@ const siteMetadata = {
   siteUrl: SITE_URL,
 
   siteLogo: `${SITE_URL}/images/jmb-logo.png`,
-  socialBanner: `${SITE_URL}/images/jmb-social-banner.png`,
+  socialBanner: `${SITE_URL}/images/jmb-social-banner.webp`,
 };
 
 export default siteMetadata;
